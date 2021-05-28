@@ -1,6 +1,9 @@
 name: Add Collaborators
 
-on: pull_request
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
   add-collaborators:
