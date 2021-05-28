@@ -22,7 +22,7 @@ jobs:
               output: process.stdout,
               console: false
             });
-            readInterface.on('line', function(line) {
+            readInterface.on('line', async function(line) {
               try {
                 await github.repos.checkCollaborator({
                             owner: context.repo.owner,
