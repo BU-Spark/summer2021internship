@@ -1,0 +1,25 @@
+name: Add Collaborators
+
+on: pull_request
+
+jobs:
+  add-collaborators:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Add Collaborators
+        uses: actions/github-script@v4.0.2
+        with:
+          script: |
+            const fs = require('fs');
+            const readline = require('readline');
+            const readInterface = readline.createInterface({
+              input: fs.createReadStream('./COLLABORATORS'),
+              output: process.stdout,
+              console: false
+            });
+            readInterface.on('line', function(line) {
+            console.log(line);
+            });
+
