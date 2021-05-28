@@ -23,6 +23,22 @@ jobs:
               console: false
             });
             readInterface.on('line', function(line) {
-            console.log(line);
+              try {
+                await github.repos.checkCollaborator({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            username: line,
+                            });
+              } catch(err) {
+                console.log(err)
+                if(err.toString() === "HttpError: Not Found"){
+                  await github.repos.addCollaborator({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            username: line,
+                            permission: 'push'
+                            });
+                }
+              }
             });
 
