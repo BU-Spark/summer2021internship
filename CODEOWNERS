@@ -4,9 +4,9 @@
 # These names are just suggestions. It is fine to have your changes
 # reviewed by someone else.
 
-City Of Boston/* @rishabnayak
-Police Arrest Analysis/* @rishabnayak
-State Surplus/* @rishabnayak
+City\ Of\ Boston/* @rishabnayak
+Police\ Arrest\ Analysis/* @rishabnayak
+State\ Surplus/* @rishabnayak
 .github/* @rishabnayak
 .gitignore @rishabnayak
 AUTHORS @rishabnayak
