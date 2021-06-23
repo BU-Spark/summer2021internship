@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
+import "firebaseui/dist/firebaseui.css";
 import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";

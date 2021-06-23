@@ -1,4 +1,5 @@
 import firebase from "firebase/app";
+const firebaseui = require("firebaseui");
 import "firebase/auth";
 import "firebase/firestore";
 import "firebase/functions";
@@ -22,7 +23,19 @@ const db = firebase.firestore();
 firebase.performance();
 firebase.analytics();
 
-const arrayUnion = (array) => firebase.firestore.FieldValue.arrayUnion(array);
+const authUI = new firebaseui.auth.AuthUI(auth);
+
+const authUIConfig = {
+  signInSuccessUrl: "/",
+  signInOptions: [
+    {
+      provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      customParameters: {
+        prompt: "select_account",
+      },
+    },
+  ],
+};
 
 export default app;
-export { auth, functions, db, arrayUnion };
+export { auth, functions, db, authUI, authUIConfig };

@@ -1,18 +1,18 @@
 <template>
-  <div id="app">
-    <navigation />
+  <v-app>
+    <navigationBar />
     <router-view />
-  </div>
+  </v-app>
 </template>
 
 <script>
-import navigation from "@/components/navigation.vue";
-import store from "@/store/store.js";
+import navigationBar from "@/components/Navigation.vue";
+import store from "@/store/index.js";
 export default {
   name: "App",
   store,
   components: {
-    navigation,
+    navigationBar,
   },
   data() {
     return {};
@@ -21,4 +21,9 @@ export default {
 </script>
 
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 </style>

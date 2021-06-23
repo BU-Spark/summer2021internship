@@ -1,30 +1,19 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import store from "@/store/index.js";
-import login from "@/components/login";
-import editprofile from "@/components/edit-profile";
-import profile from "@/components/profile";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/login",
+    name: "Login",
+    component: () => import("@/views/Login.vue"),
+  },
+  {
     path: "/",
-    name: "login",
-    component: login,
-  },
-  {
-    path: "/editprofile",
-    name: "editprofile",
-    component: editprofile,
-    meta: {
-      requiresAuth: true,
-    },
-  },
-  {
-    path: "/profile/:uname",
-    name: "profile",
-    component: profile,
+    name: "Home",
+    component: () => import("@/views/Home.vue"),
   },
 ];
 
