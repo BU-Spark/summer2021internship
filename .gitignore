@@ -136,3 +136,11 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# React
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+node_modules/
