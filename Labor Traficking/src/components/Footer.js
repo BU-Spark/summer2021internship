@@ -47,9 +47,9 @@ const Footer = () => {
                 Need Help? Contact the U.S. National Human Trafficking Hotline.
                 <div className="myContact">
                     <img alt="call" src="/icons/phone.svg"></img>
-                    <a href="tel:1-888-373-7888">1-888-373-7888</a>
+                    <a href="tel:1-888-373-7888"> 1-888-373-7888 </a>
                     <img alt="sms" src="/icons/mobile.svg"></img>
-                    <a href="sms:233733&amp;body=BEFREE">Text "BEFREE" to: 233733</a>
+                    <a href="sms:233733&amp;body=BEFREE"> Text "BEFREE" to: 233733 </a>
                 </div>
             </div>
         </footer>
