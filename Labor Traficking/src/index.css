@@ -5,6 +5,8 @@ main {
 .banner {
   background-color: #19578d;
   color: #fff;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .banner a {
@@ -22,6 +24,7 @@ main {
 
 .banner h1 {
   color: #fff;
+  padding-top: 3%;
 }
 
 .myFontColorBlue {
@@ -117,4 +120,13 @@ h6 {
   left: 3%;
   width: 20%;
   height: auto;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 0;
+}
+.middleBanner {
+  margin-top: 3%;
+  margin-left: 3%;
 }
