@@ -89,39 +89,32 @@ h6 {
 
 .topBanner {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: white;
   top: 0;
   left: 0;
 }
 
-.topBanner .caption {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 40px;
-}
-
 .topBanner .description {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 70%;
+  left: 35%;
   transform: translate(-50%, -50%);
 }
 
 .image1 {
+  width: 100%;
+  height: auto;
   position: relative;
   top: 0;
   left: 0;
-  border: 1px red solid;
   padding: 0;
   margin-top: 0;
 }
 .image2 {
   position: absolute;
-  top: 150px;
-  left: 30px;
-  border: 1px green solid;
+  top: 25%;
+  left: 3%;
+  width: 20%;
+  height: auto;
 }
