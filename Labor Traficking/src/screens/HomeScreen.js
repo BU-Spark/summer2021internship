@@ -5,15 +5,7 @@ const HomeScreen = () => {
         <>
             <div class="topBanner">
                 <img alt="topBanner" src="/icons/header.svg" class="image1"></img>
-                <img alt="result" src="/icons/ResultWordmark.svg" class="image2"></img>
-
-
-                <hr className='yellowLine' />
-                <div class="description">
-                    <label>
-                        Recognize and Evaluate Signs to Uncover Labor Trafficking, is a tool to help investigators identify potential labor trafficking under Massachusettes Law.
-                    </label>
-                </div>
+                <img alt="result" src="/icons/HeaderTextResult.svg" class="image2"></img>
             </div>
             <div class="middleBanner">
                 <h3>Our Tools</h3>
