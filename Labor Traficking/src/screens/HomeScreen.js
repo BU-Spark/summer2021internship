@@ -31,7 +31,9 @@ const HomeScreen = () => {
                     <label>Find tips for interviewing victims</label>
                     <a href="/">FIND TIPS<i class="fas fa-arrow-right"></i> </a>
                 </div>
-                <div className="containers">
+
+
+                <div className="containers" id="largeContainer">
                     <img alt="resources" src="/icons/Groupresources.svg" class="card__icon"></img>
                     <h4>Resources</h4>
                     <hr className='yellowLine' />
@@ -39,7 +41,7 @@ const HomeScreen = () => {
                     <a href="/">EXPLORE RESOURCES<i class="fas fa-arrow-right"></i> </a>
                 </div>
             </div>
-            <div className="banner">
+            <div className="bottomBanner">
                 <h4>Labor Trafficking Under Massachusettes Law</h4>
                 <hr className='yellowLine' />
                 <h5>
