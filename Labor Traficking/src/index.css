@@ -75,6 +75,15 @@ h6 {
   color: #a6b1b1;
 }
 
+.yellowLineSize{
+  height: 80px;
+  width: 100px;
+}
+
+.assessScreenText {
+  width: 250px;
+}
+
 .yellowLine {
   border-right: #f4c346 solid;
   width: 20%;

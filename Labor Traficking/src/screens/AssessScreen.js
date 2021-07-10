@@ -37,36 +37,43 @@ const AssessScreen = () => {
                 }}>
                     <View>
                         <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginBottom: 2, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}> Serious Harm</h2>
+                            <img alt="seriousharm" src="/icons/SeriousHarm.svg" className="assessScreenText"></img>
+                            {/* <h2 style={{ color: '#20548c' }}> Serious Harm</h2> */}
+                            <img alt="line" src="/icons/yellowline.svg" className="yellowLineSize"></img>
                             <p>Causes or threatens to cause serious harm to any person.</p>
                             <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
                         </View>
                         <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginTop: 1, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}>Extortion</h2>
+                            <img alt="extortion" src="/icons/Extortion.svg" className="assessScreenText"></img>
+                            <img alt="line" src="/icons/yellowline.svg" className="yellowLineSize"></img>
                             <p>Engages in extortion under Massachusetts Law.</p>
                             <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
                         </View>
                     </View>
                     <View>
                         <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginBottom: 2, marginLeft: 2, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}>Physical Restraint</h2>
+                            <img alt="physrestraint" src="/icons/PhysRestraint.svg" className="assessScreenText"></img>
+                            <img alt="line" src="/icons/yellowline.svg" className="yellowLineSize"></img>
                             <p>Physically restrains or threatens to physically restrain another person.</p>
                             <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
                         </View>
                         <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginTop: 1, marginLeft: 2, backgroundColor: 'white' }}>
                             <h2 style={{ color: '#20548c' }}>Financial Harm</h2>
+                            <img alt="line" src="/icons/yellowline.svg" className="yellowLineSize"></img>
                             <p>Causes or threatens to cause financial harm to any person.</p>
                             <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
                         </View>
                     </View>
                     <View>
                         <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginBottom: 2, marginLeft: 2, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}>Abuse of Law</h2>
+                            <img alt="abuseoflaw" src="/icons/AbuseOfLaw.svg" className="assessScreenText"></img>
+                            <img alt="line" src="/icons/yellowline.svg" className="yellowLineSize"></img>
                             <p>Abuses or threatens to abuse the law or legal process.</p>
                             <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
                         </View>
                         <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginTop: 1, marginLeft: 2, backgroundColor: 'white' }}>
                             <h2 style={{ color: '#20548c' }}>Identity Documents</h2>
+                            <img alt="line" src="/icons/yellowline.svg" className="yellowLineSize"></img>
                             <p>Knowingly destroys, conceals, removes, confiscates or possesses any actual or purported government identification document, of another person.</p>
                             <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
                         </View>
