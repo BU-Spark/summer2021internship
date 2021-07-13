@@ -75,7 +75,7 @@ h6 {
   color: #a6b1b1;
 }
 
-.yellowLineSize{
+.yellowLineSize {
   height: 80px;
   width: 100px;
 }
@@ -176,4 +176,13 @@ h6 {
 .middleBanner {
   margin-top: 3%;
   margin-left: 3%;
+}
+
+.middleBanner h4 {
+  padding-top: 3%;
+  color: #19578d;
+}
+
+.middleBanner h3 {
+  color: #19578d;
 }
