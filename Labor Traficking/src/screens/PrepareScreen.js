@@ -75,7 +75,6 @@ const PrepareScreen = () => {
                                 </ul>
                             </li>
                         </ul>
-
                         </div>
                     </div>
                 </div>
@@ -83,15 +82,19 @@ const PrepareScreen = () => {
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                 Tip #2: Understand the impact of immigration status on victim cooperation
                             </button>
                         </h5>
                     </div>
 
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            {/* ADD TEXT HERE */}
+                            <ul>
+                                <li>
+                                    Test to see if its working
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
