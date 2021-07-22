@@ -1,6 +1,9 @@
-import React from 'react'
-import { Dimensions, View } from 'react-native'
-const DeviceWidth = Dimensions.get('window').width
+import React from 'react';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+//https://reactgo.com/material-ui-react-tutorial/
 
 const AssessScreen = () => {
 
@@ -10,6 +13,25 @@ const AssessScreen = () => {
         paddingBottom: "20px",
         fontStyle: "italic"
     };
+
+    const gridPadding = {
+        marginLeft: '40px',
+        marginRight: '40px',
+        marginTop: '40px',
+        marginBottom: '40px'
+      };
+
+    const divStyle = {
+        marginLeft: '50px',
+        marginRight: '30px',
+        marginTop: '30px',
+        marginBottom: '50px'
+      };
+
+    const textStyle = {
+        marginTop: '30px',
+        marginBottom: '40px'
+    }
 
     return (
         <>
@@ -25,94 +47,96 @@ const AssessScreen = () => {
                 </p>
             </div>
 
-            <View style={{
-                flex: 1,
-                justifyContent: 'center',
-                alignItems: 'center',
-            }}>
-
-                <View style={{
-                    flexDirection: 'row',
-                    backgroundColor: "grey"
-                }}>
-                    <View>
-                        <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginBottom: 2, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}> Serious Harm</h2>
-                            <p>Causes or threatens to cause serious harm to any person.</p>
-                            <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
-                        </View>
-                        <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginTop: 1, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}>Extortion</h2>
-                            <p>Engages in extortion under Massachusetts Law.</p>
-                            <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
-                        </View>
-                    </View>
-                    <View>
-                        <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginBottom: 2, marginLeft: 2, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}>Physical Restraint</h2>
-                            <p>Physically restrains or threatens to physically restrain another person.</p>
-                            <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
-                        </View>
-                        <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginTop: 1, marginLeft: 2, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}>Financial Harm</h2>
-                            <p>Causes or threatens to cause financial harm to any person.</p>
-                            <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
-                        </View>
-                    </View>
-                    <View>
-                        <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginBottom: 2, marginLeft: 2, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}>Abuse of Law</h2>
-                            <p>Abuses or threatens to abuse the law or legal process.</p>
-                            <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
-                        </View>
-                        <View style={{ width: DeviceWidth * 0.3, height: DeviceWidth * 0.3, marginTop: 1, marginLeft: 2, backgroundColor: 'white' }}>
-                            <h2 style={{ color: '#20548c' }}>Identity Documents</h2>
-                            <p>Knowingly destroys, conceals, removes, confiscates or possesses any actual or purported government identification document, of another person.</p>
-                            <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
-                        </View>
-                    </View>
-                </View>
-            </View>
-
-            {/* <div style={divStyle}>
+        <div style={gridPadding}>
             <Container>
                 <Row>
-                    <Col className='text py-3 vl border-right border-bottom'>
-                        <h2 style={{ color: '#20548c' }}>Serious Harm</h2>
-                        <p>Causes or threatens to cause serious harm to any person.</p>
-                        <a href="/">VIEW QUESTIONS<i class="fas fa-arrow-right"></i> </a>
+                    <Col className="leftBox">
+                        <div style={divStyle}>
+                        <div>
+                            <img alt="seriousharm" src="/icons/SeriousHarm.svg"></img>
+                        </div>
+                        <img alt="yellowline" src="/icons/yellowline.svg"></img>
+                        <div style={textStyle}>
+                        <label>Causes or threatens to cause serious harm to any person.</label>
+                        </div>
+                        <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
+                        </div>
                     </Col>
-                    <Col className='text py-3 vl border-bottom'>
-                        <h2 style={{ color: '#20548c' }}>Physical Restraint</h2>
-                        <p>Physically restrains or threatens to physically restrain another person.</p>
-                        <a href="/">VIEW QUESTIONS<i class="fas fa-arrow-right"></i> </a>
+                    <Col className="leftBox">
+                        <div style={divStyle}>
+                        <div>
+                            <img alt="physicalrestraint" src="/icons/PhysRestraint.svg"></img>
+                        </div>
+                        <img alt="yellowline" src="/icons/yellowline.svg"></img>
+                        <div style={textStyle}>
+                        <label>Physically restrains or threatens to physically restrain another person.</label>
+                        </div>
+                        <div>
+                        <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
+                        </div>
+                        </div>
                     </Col>
-                    <Col className='text py-3 border-bottom'>
-                        <h2 style={{ color: '#20548c' }}>Abuse of Law</h2>
-                        <p>Abuses or threatens to abuse the law or legal process.</p>
-                        <a href="/">VIEW QUESTIONS<i class="fas fa-arrow-right"></i> </a>
+                    <Col className="rightBox">
+                        <div style={divStyle}>
+                        <div>
+                            <img alt="abuseoflaw" src="/icons/AbuseOfLaw.svg"></img>
+                        </div>
+                        <img alt="yellowline" src="/icons/yellowline.svg"></img>
+                        <div style={textStyle}>
+                        <label>Abuses or threatens to abuse the law or legal process.</label>
+                        </div>
+                        <div>
+                        <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
+                        </div>
+                        </div>
                     </Col>
                 </Row>
-
                 <Row>
-                <Col className='text py-3 vl'>
-                        <h2 style={{ color: '#20548c' }}>Extortion</h2>
-                        <p>Engages in extortion under Massachusetts Law.</p>
-                        <a href="/">VIEW QUESTIONS<i class="fas fa-arrow-right"></i> </a>
+                    <Col className="bottomBox">
+                        <div style={divStyle}>
+                        <div>
+                            <img alt="extortion" src="/icons/Extortion.svg"></img>
+                        </div>
+                        <img alt="yellowline" src="/icons/yellowline.svg"></img>
+                        <div style={textStyle}>
+                        <label>Engages in extortion under Massachusetts Law. </label>
+                        </div>
+                        <div>
+                        <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
+                        </div>
+                        </div>
                     </Col>
-                    <Col className='text py-3 vl'>
-                        <h2 style={{ color: '#20548c' }}>Financial Harm</h2>
-                        <p>Causes or threatens to cause financial harm to any person.</p>
-                        <a href="/">VIEW QUESTIONS<i class="fas fa-arrow-right"></i> </a>
+                    <Col className="bottomBox">
+                        <div style={divStyle}>
+                        <div>
+                            <img alt="financialharm" src="/icons/FinancialHarm.svg"></img>
+                        </div>
+                        <img alt="yellowline" src="/icons/yellowline.svg"></img>
+                        <div style={textStyle}>
+                        <label>Causes or threatens to cause financial harm to any person.</label>
+                        </div>
+                        <div>
+                        <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
+                        </div>
+                        </div>
                     </Col>
-                    <Col className='text py-3'>
-                        <h2 style={{ color: '#20548c' }}>Identity Documents</h2>
-                        <p>Knowingly destroys, conceals, removes, confiscates or possesses any actual or purported government identification document, of another person.</p>
-                        <a href="/">VIEW QUESTIONS<i class="fas fa-arrow-right"></i> </a>
+                    <Col>
+                        <div style={divStyle}>
+                        <div>
+                            <img alt="iddocuments" src="/icons/IdentityDocuments.svg"></img>
+                        </div>
+                        <img alt="yellowline" src="/icons/yellowline.svg"></img>
+                        <div style={textStyle}>
+                        <label>Knowingly destroys, conceals, removes, confiscates or possesses any actual or purported government identification document, of another person.</label>
+                        </div>
+                        <div>
+                        <a href="/">VIEW QUESTIONS<i className="fas fa-arrow-right"></i> </a>
+                        </div>
+                        </div>
                     </Col>
                 </Row>
             </Container>
-        </div> */}
+        </div>
         </>
     )
 }
