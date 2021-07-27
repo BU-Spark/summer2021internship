@@ -15,6 +15,14 @@ const routes = [
     name: "Home",
     component: () => import("@/views/Home.vue"),
   },
+  {
+    path: "/admin",
+    name: "Admin",
+    component: () => import("@/views/Admin.vue"),
+    meta: {
+      requiresAuth: true
+    }
+  },
 ];
 
 const router = new VueRouter({
@@ -29,7 +37,7 @@ router.beforeEach((to, from, next) => {
     if (user) {
       next();
     } else {
-      next({ name: "login" });
+      next('/login');//next({ name: "login" });
     }
   } else {
     next();
