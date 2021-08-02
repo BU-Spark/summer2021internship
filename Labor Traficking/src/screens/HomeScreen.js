@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const HomeScreen = () => {
     return (
@@ -7,6 +8,7 @@ const HomeScreen = () => {
                 <img alt="topBanner" src="/icons/header.svg" className="image1"></img>
                 <img alt="result" src="/icons/HeaderTextResult.svg" className="image2"></img>
             </div>
+
             <div className="middleBanner">
                 <h3>Our Tools</h3>
                 <div className="containers">
@@ -14,25 +16,24 @@ const HomeScreen = () => {
                     <h4>Assess</h4>
                     <hr className='yellowLine' />
                     <label>Determine if your case is labor trafficking</label>
-                    <a href="/">GET STARTED<i className="fas fa-arrow-right"></i> </a>
+                    <Link to="/Assess">GET STARTED</Link> <i className="fas fa-arrow-right"></i>
                 </div>
                 <div className="containers">
                     <img alt="prepare" src="/icons/Groupprepare.svg" className="card__icon"></img>
                     <h4>Prepare</h4>
                     <hr className='yellowLine' />
                     <label>Find tips for interviewing victims</label>
-                    <a href="/">FIND TIPS<i className="fas fa-arrow-right"></i> </a>
+                    <Link to="/Prepare">FIND TIPS</Link> <i className="fas fa-arrow-right"></i>
                 </div>
-
-
                 <div className="containers" id="largeContainer">
                     <img alt="resources" src="/icons/Groupresources.svg" className="card__icon"></img>
                     <h4>Resources</h4>
                     <hr className='yellowLine' />
                     <label>Browse resources avaiable in your area</label>
-                    <a href="/">EXPLORE RESOURCES<i className="fas fa-arrow-right"></i> </a>
+                    <Link to="/Resources">EXPLORE RESOURCES</Link> <i className="fas fa-arrow-right"></i>
                 </div>
             </div>
+
             <div className="bottomBanner">
                 <h4>Labor Trafficking Under Massachusettes Law</h4>
                 <hr className='yellowLine' />
