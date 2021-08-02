@@ -210,3 +210,12 @@ b {
   margin-bottom: 20%;
   font-weight: bold;
 }
+
+.accordion-button {
+  color: #19578d;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75;
+}
