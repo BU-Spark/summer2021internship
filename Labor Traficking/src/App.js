@@ -9,6 +9,7 @@ import ResourcesScreen from './screens/ResourcesScreen';
 import MassLawScreen from './screens/MassLawScreen';
 import AboutUsScreen from './screens/AboutUsScreen';
 import AssessExtortion from './screens/AssessExtortion';
+import AssessSeriousHarm from './screens/AssessSeriousHarm';
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
           <Route path='/resources' component={ResourcesScreen} exact />
           <Route path='/massLaw' component={MassLawScreen} exact />
           <Route path='/aboutUs' component={AboutUsScreen} exact />
-          <Route path='/assessExtortion' component={AssessExtortion} exact />
+          <Route path='/assess/Extortion' component={AssessExtortion} exact />
+          <Route path='/assess/SeriousHarm' component={AssessSeriousHarm} exact />
         </Container>
       </main>
       <Footer />
