@@ -219,3 +219,13 @@ b {
   font-size: 1.5rem;
   line-height: 1.75;
 }
+
+.assessNavBar {
+  color: #fff;
+  background-color: #19578d;
+}
+
+.assessNavBar .nav-link {
+  color: white;
+  background-color: #19578d;
+}
