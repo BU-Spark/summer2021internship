@@ -1,4 +1,0 @@
-/** Navigator
- *
- * <links to details>
- */
