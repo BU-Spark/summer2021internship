@@ -1,0 +1,8 @@
+/* font */
+p {
+    font-family: Roboto;
+    font-style: Medium;
+    font-size: 36px;
+    line-height: 42px;
+    line-height: 100%;
+  }
