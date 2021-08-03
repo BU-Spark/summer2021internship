@@ -87,9 +87,6 @@ p.question {
 }
 
 /* RADIO BUTTON STYLING */
-.radioAlign {
-
-}
 
 .yesButton {
   border: 2px solid #E5E5E5;
@@ -102,9 +99,16 @@ p.question {
   border: 2px solid #E5E5E5;
   width: 250px;
   margin-right: 50px;
+  padding-left: 10px;
 }
 
 .idkButton {
   border: 2px solid #E5E5E5;
   width: 250px;
+  padding-left: 10px;
+}
+
+.button {
+  padding-left: 1207px;
+  padding-bottom: 80px;
 }
