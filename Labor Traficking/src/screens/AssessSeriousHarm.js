@@ -15,7 +15,7 @@ import styled from "styled-components";
   rel="stylesheet"
 />;
 
-const AssessExtortion = () => {
+const AssessSeriousHarm = () => {
   /* radio button settings */
   const [value, setValue] = React.useState("Yes");
 
@@ -493,4 +493,4 @@ const AssessExtortion = () => {
   );
 };
 
-export default AssessExtortion;
+export default AssessSeriousHarm
