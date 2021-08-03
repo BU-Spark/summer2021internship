@@ -9,22 +9,22 @@ const AssessNavigator = () => {
                 <LinkContainer to='/'>
                     <Nav.Link>Back to all topics</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to='/assessSeriousHarm'>
+                <LinkContainer to='/assess/SeriousHarm'>
                     <Nav.Link>Serious Harm</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to='/assessPhysicalRestraint'>
+                <LinkContainer to='/assess/PhysicalRestraint'>
                     <Nav.Link>Physical Restraint</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to='/assessAbuseOfLaw'>
+                <LinkContainer to='/assess/AbuseOfLaw'>
                     <Nav.Link>Abuse of Law</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to='/assessExtortion'>
+                <LinkContainer to='/assess/Extortion'>
                     <Nav.Link>Extortion</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to='/assessFinancialHarm'>
+                <LinkContainer to='/assess/FinancialHarm'>
                     <Nav.Link>Financial Harm</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to='/assessIdentifyDocuments'>
+                <LinkContainer to='/assess/IdentityDocuments'>
                     <Nav.Link>Identify Documents</Nav.Link>
                 </LinkContainer>
             </Nav>

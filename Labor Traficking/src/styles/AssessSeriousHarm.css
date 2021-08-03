@@ -1,45 +1,70 @@
 /* change breadcrumb colour */
-.breadcrumb >.active a{
-    color: navy;
-    text-decoration: none;
- }
+.breadcrumb1 {
+   margin-top: 30px;
+   margin-bottom: -20px;
+}
 
- /* h1 {
-    position: absolute;
-    width: 333px;
-    height: 63px;
-    left: 485px;
-    top: 192px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 54px;
-    line-height: 63px;
-    text-align: center;
-    
-    color: #19578D;  
- } */
+hr.divider {
+  margin-bottom:30px;
+  border-width: 2px;
+}
 
- /* Style the buttons that are used to open and close the accordion panel */
+hr.divider2 {
+  margin-top: 30px;
+  border-width: 2px;
+}
+
+i.i {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* title text */
+.h1 {
+  width: 333px;
+  margin-top: 20px;
+  height: 55px;
+  font-weight: 900;
+  text-transform: none;
+  font-family: Roboto;
+  font-size: 40px;
+  line-height: 63px;
+  color: #19578d;
+}
+
+.h2 {
+  font-size: 28px;
+  text-transform: none;
+  color: #19578d;
+}
+
+.definitionHeader {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.definition {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* question text style */
+p.question {
+  font-family: Roboto;
+  color: #144d7e;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
 .accordion {
-    font-family: Roboto;
-    width: 100%;
-    cursor: pointer;
-    text-align: left;
-    border-color: #19578D;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+  width: 100%;
+  border-color: #19578d;
+}
 
-  .accordion:after {
-    font-size: 13px;
-    color: #777;
-    float: right;
-  }
+/* accordion div style */
+.accordionElement {
+  width: 850px;
+  margin: auto;
+  border: 1px solid #19578d;
+}
