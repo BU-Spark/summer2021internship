@@ -26,6 +26,7 @@ const Footer = () => {
                             <dd>About</dd>
                             <dd>Our goal</dd>
                             <dd>Who We Are</dd>
+                            <dd><a href="https://analytics.google.com/" target="_blank" rel="noopener noreferrer">Google Analytics</a></dd>
                         </dl>
                     </Col>
                     <Col className='text-center py-3'>
