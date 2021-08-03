@@ -10,6 +10,7 @@ import MassLawScreen from './screens/MassLawScreen';
 import AboutUsScreen from './screens/AboutUsScreen';
 import AssessExtortion from './screens/AssessExtortion';
 import AssessSeriousHarm from './screens/AssessSeriousHarm';
+import AssessPhysicalRestraint from './screens/AssessPhysicalRestraint';
 
 const App = () => {
   return (
@@ -23,8 +24,9 @@ const App = () => {
           <Route path='/resources' component={ResourcesScreen} exact />
           <Route path='/massLaw' component={MassLawScreen} exact />
           <Route path='/aboutUs' component={AboutUsScreen} exact />
-          <Route path='/assess/Extortion' component={AssessExtortion} exact />
           <Route path='/assess/SeriousHarm' component={AssessSeriousHarm} exact />
+          <Route path='/assess/PhysicalRestraint' component={AssessPhysicalRestraint} exact />
+          <Route path='/assess/Extortion' component={AssessExtortion} exact />
         </Container>
       </main>
       <Footer />
