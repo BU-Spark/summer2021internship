@@ -25,7 +25,7 @@ const AssessNavigator = () => {
                     <Nav.Link>Financial Harm</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to='/assess/IdentityDocuments'>
-                    <Nav.Link>Identify Documents</Nav.Link>
+                    <Nav.Link>Identity Documents</Nav.Link>
                 </LinkContainer>
             </Nav>
         </div>

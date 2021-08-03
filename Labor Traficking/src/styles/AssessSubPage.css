@@ -1,8 +1,12 @@
-/* change breadcrumb colour */
+/* BREADCRUMB STYLING */
+
+/* change breadcrumb margins */
 .breadcrumb1 {
    margin-top: 30px;
    margin-bottom: -20px;
 }
+
+/* HORIZONTAL DIVIDER STYLING */
 
 hr.divider {
   margin-bottom:30px;
@@ -13,6 +17,8 @@ hr.divider2 {
   margin-top: 30px;
   border-width: 2px;
 }
+
+/* WEBSITE TEXT STYLING */
 
 i.i {
   font-size: 18px;
@@ -35,7 +41,7 @@ i.i {
 .h2 {
   font-size: 28px;
   text-transform: none;
-  color: #19578d;
+  color: #19578d !important;
 }
 
 .definitionHeader {
@@ -46,25 +52,59 @@ i.i {
 .definition {
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #323232;
 }
+
+/* ACCORDION STYLING */
 
 /* question text style */
 p.question {
   font-family: Roboto;
   color: #144d7e;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 23px;
+  font-weight: bold !important;
   line-height: 28px;
 }
 
-.accordion {
-  width: 100%;
-  border-color: #19578d;
+/* question headers */
+.h5 {
+  text-transform: none;
+  color: #606263;
+}
+
+.accordionHeader {
+  width: 100% !important;
+  border-style: 'solid';
+  padding-right: 40px; 
 }
 
 /* accordion div style */
 .accordionElement {
-  width: 850px;
+  width: 100%;
   margin: auto;
   border: 1px solid #19578d;
+  margin-bottom: 35px;
+}
+
+/* RADIO BUTTON STYLING */
+.radioAlign {
+
+}
+
+.yesButton {
+  border: 2px solid #E5E5E5;
+  width: 250px;
+  margin-right: 50px;
+  padding-left: 10px;
+}
+
+.noButton {
+  border: 2px solid #E5E5E5;
+  width: 250px;
+  margin-right: 50px;
+}
+
+.idkButton {
+  border: 2px solid #E5E5E5;
+  width: 250px;
 }

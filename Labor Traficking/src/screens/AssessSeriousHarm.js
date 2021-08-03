@@ -1,4 +1,4 @@
-import "../styles/AssessSeriousHarm.css";
+import "../styles/AssessSubPage.css";
 import React from "react";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
@@ -15,6 +15,12 @@ import Accordion from "react-bootstrap/Accordion";
 />;
 
 const AssessExtortion = () => {
+  const [value, setValue] = React.useState("Yes");
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+
   return (
     <div>
       <Container>
@@ -39,56 +45,57 @@ const AssessExtortion = () => {
               </ol>
               <hr className="divider"></hr>
               <h1 className="h1">Serious Harm</h1>
-              <View 
+              {/* horizontal yellow line */}
+              <View
                 style={{
-                borderBottomColor: '#F4C346',
-                borderBottomWidth: 5,
-                height: -5,
-                width: 90,
-                marginBottom: 35,
+                  borderBottomColor: "#F4C346",
+                  borderBottomWidth: 5,
+                  height: -5,
+                  width: 90,
+                  marginBottom: 35,
                 }}
               />
               <i className="i">
-              Causes or threatens to cause serious harm to any person.
+                Causes or threatens to cause serious harm to any person.
               </i>
               <hr className="divider2"></hr>
               <div className="definitionHeader">
-              <h2 className="h2">Lay Definition</h2>
-              <div className="definition">
-              Serious harm may be physical and nonphysical, including
-              psychological, financial, or reputational harm. Generally, the
-              test contemplates whether it is sufficiently serious, under all
-              the surrounding circumstances, to compel a reasonable person of
-              the same background and in the same circumstances to perform or to
-              continue performing labor or services in order to avoid incurring
-              that harm.
-              </div>
-              </div>
-              <div className="definitionHeader">
-              <h2 className="h2">Legal Definition</h2>
-              <div className="definition">
-              There is currently no statutory or case law definition of serious
-              harm under Massachusetts law. Serious harm is defined under
-              federal law as any harm, whether physical or nonphysical,
-              including psychological, financial, or reputational harm, that is
-              sufficiently serious, under all the surrounding circumstances, to
-              compel a reasonable person of the same background and in the same
-              circumstances to perform or to continue performing labor or
-              services in order to avoid incurring that harm. 18 USC §
-              1589(c)(2).
+                <h2 className="h2">Lay Definition</h2>
+                <div className="definition">
+                  Serious harm may be physical and nonphysical, including
+                  psychological, financial, or reputational harm. Generally, the
+                  test contemplates whether it is sufficiently serious, under
+                  all the surrounding circumstances, to compel a reasonable
+                  person of the same background and in the same circumstances to
+                  perform or to continue performing labor or services in order
+                  to avoid incurring that harm.
+                </div>
               </div>
               <div className="definitionHeader">
-              <h2 className="h2">Evaluate</h2>
+                <h2 className="h2">Legal Definition</h2>
+                <div className="definition">
+                  There is currently no statutory or case law definition of
+                  serious harm under Massachusetts law. Serious harm is defined
+                  under federal law as any harm, whether physical or
+                  nonphysical, including psychological, financial, or
+                  reputational harm, that is sufficiently serious, under all the
+                  surrounding circumstances, to compel a reasonable person of
+                  the same background and in the same circumstances to perform
+                  or to continue performing labor or services in order to avoid
+                  incurring that harm. 18 USC § 1589(c)(2).
+                </div>
+                <div className="definitionHeader">
+                  <h2 className="h2">Evaluate</h2>
+                </div>
               </div>
-              </div>
-              <div className="accordion">
-                <Accordion>
-                  <div className="accordionElement">
-                    <Accordion.Item eventKey="0">
+              <Accordion>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="1">
+                    <div className="accordionHeader">
                       <Accordion.Header>
                         <Container>
                           <Row>
-                            <h5>Question 1/9</h5>
+                            <h5 className="h5">Question 1/9</h5>
                           </Row>
                           <Row>
                             <p class="question">
@@ -98,23 +105,42 @@ const AssessExtortion = () => {
                           </Row>
                         </Container>
                       </Accordion.Header>
-                      <Accordion.Body>
-                        <RadioGroup row>
-                          <FormControlLabel control={<Radio />} label="Yes" />
-                          <FormControlLabel control={<Radio />} label="No" />
+                    </div>
+                    <Accordion.Body>
+                      <div className="radioAlign">
+                      <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
                           <FormControlLabel
+                            value="Yes"
+                            control={<Radio />}
+                            label="Yes"
+                          />
+                          </div>
+                          <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio />}
+                            label="No"
+                          />
+                          </div>
+                          <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
                             control={<Radio />}
                             label="I don't know"
                           />
-                        </RadioGroup>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </div>
+                          </div>
+                      </RadioGroup>
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
                   <Accordion.Item eventKey="2">
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5>Question 2/9</h5>
+                          <h5 className="h5">Question 2/9</h5>
                         </Row>
                         <Row>
                           <p class="question">
@@ -126,11 +152,13 @@ const AssessExtortion = () => {
                     </Accordion.Header>
                     <Accordion.Body>mm yummy placeholder</Accordion.Body>
                   </Accordion.Item>
+                </div>
+                <div className="accordionElement">
                   <Accordion.Item eventKey="3">
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5>Question 3/9</h5>
+                          <h5 className="h5">Question 3/9</h5>
                         </Row>
                         <Row>
                           <p class="question">
@@ -142,11 +170,13 @@ const AssessExtortion = () => {
                     </Accordion.Header>
                     <Accordion.Body>mm yummy placeholder</Accordion.Body>
                   </Accordion.Item>
+                </div>
+                <div className="accordionElement">
                   <Accordion.Item eventKey="4">
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5>Question 4/9</h5>
+                          <h5 className="h5">Question 4/9</h5>
                         </Row>
                         <Row>
                           <p class="question">
@@ -158,11 +188,13 @@ const AssessExtortion = () => {
                     </Accordion.Header>
                     <Accordion.Body>mm yummy placeholder</Accordion.Body>
                   </Accordion.Item>
+                </div>
+                <div className="accordionElement">
                   <Accordion.Item eventKey="5">
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5>Question 5/9</h5>
+                          <h5 className="h5">Question 5/9</h5>
                         </Row>
                         <Row>
                           <p class="question">
@@ -174,11 +206,13 @@ const AssessExtortion = () => {
                     </Accordion.Header>
                     <Accordion.Body>mm yummy placeholder</Accordion.Body>
                   </Accordion.Item>
+                </div>
+                <div className="accordionElement">
                   <Accordion.Item eventKey="6">
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5>Question 6/9</h5>
+                          <h5 className="h5">Question 6/9</h5>
                         </Row>
                         <Row>
                           <p class="question">
@@ -190,11 +224,13 @@ const AssessExtortion = () => {
                     </Accordion.Header>
                     <Accordion.Body>mm yummy placeholder</Accordion.Body>
                   </Accordion.Item>
+                </div>
+                <div className="accordionElement">
                   <Accordion.Item eventKey="7">
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5>Question 7/9</h5>
+                          <h5 className="h5">Question 7/9</h5>
                         </Row>
                         <Row>
                           <p class="question">
@@ -206,11 +242,13 @@ const AssessExtortion = () => {
                     </Accordion.Header>
                     <Accordion.Body>mm yummy placeholder</Accordion.Body>
                   </Accordion.Item>
+                </div>
+                <div className="accordionElement">
                   <Accordion.Item eventKey="8">
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5>Question 8/9</h5>
+                          <h5 className="h5">Question 8/9</h5>
                         </Row>
                         <Row>
                           <p class="question">
@@ -222,11 +260,13 @@ const AssessExtortion = () => {
                     </Accordion.Header>
                     <Accordion.Body>mm yummy placeholder</Accordion.Body>
                   </Accordion.Item>
+                </div>
+                <div className="accordionElement">
                   <Accordion.Item eventKey="9">
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5>Question 9/9</h5>
+                          <h5 className="h5">Question 9/9</h5>
                         </Row>
                         <Row>
                           <p class="question">
@@ -238,8 +278,8 @@ const AssessExtortion = () => {
                     </Accordion.Header>
                     <Accordion.Body>mm yummy placeholder</Accordion.Body>
                   </Accordion.Item>
-                </Accordion>
-              </div>
+                </div>
+              </Accordion>
             </div>
           </Col>
         </Row>
