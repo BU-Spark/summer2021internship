@@ -75,7 +75,7 @@ const AssessScreen = () => {
                                     <label>Engages in extortion under Massachusetts Law. </label>
                                 </div>
                                 <div>
-                                    <Link to="/assessExtortion">VIEW QUESTIONS</Link> <i className="fas fa-arrow-right"></i>
+                                    <Link to="/assess/Extortion">VIEW QUESTIONS</Link> <i className="fas fa-arrow-right"></i>
                                 </div>
                             </div>
                         </Col>
