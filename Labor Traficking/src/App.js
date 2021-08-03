@@ -11,6 +11,8 @@ import AboutUsScreen from './screens/AboutUsScreen';
 import AssessExtortion from './screens/AssessExtortion';
 import AssessSeriousHarm from './screens/AssessSeriousHarm';
 import AssessPhysicalRestraint from './screens/AssessPhysicalRestraint';
+import AssessAbuseOfLaw from './screens/AssessAbuseOfLaw';
+import AssessIdentityDocuments from './screens/AssessIdentityDocuments';
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
           <Route path='/assess/SeriousHarm' component={AssessSeriousHarm} exact />
           <Route path='/assess/PhysicalRestraint' component={AssessPhysicalRestraint} exact />
           <Route path='/assess/Extortion' component={AssessExtortion} exact />
+          <Route path='/assess/AbuseOfLaw' component={AssessAbuseOfLaw} exact />
+          <Route path='/assess/IdentityDocuments' component={AssessIdentityDocuments} exact />
         </Container>
       </main>
       <Footer />

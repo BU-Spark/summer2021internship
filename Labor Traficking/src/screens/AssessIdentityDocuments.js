@@ -1,4 +1,4 @@
-import "../styles/AssessPhysicalRestraint.css";
+import "../styles/AssessIdentityDocuments.css";
 import React from "react";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
@@ -15,7 +15,7 @@ import styled from "styled-components";
   rel="stylesheet"
 />;
 
-const AssessPhysicalRestraint = () => {
+const AssessIdentityDocuments = () => {
   /* radio button settings */
   const [value, setValue] = React.useState("Yes");
 
@@ -51,11 +51,11 @@ const AssessPhysicalRestraint = () => {
                     </li>
                   </Breadcrumb.Item>
                   <Breadcrumb.Item href="/Assess">Assess</Breadcrumb.Item>
-                  <Breadcrumb.Item active>Physical Restraint</Breadcrumb.Item>
+                  <Breadcrumb.Item active>Identity Documents</Breadcrumb.Item>
                 </Breadcrumb>
               </ol>
               <hr className="divider"></hr>
-              <h1 className="h1b">Physical Restraint</h1>
+              <h1 className="h1c">Identity Documents</h1>
               {/* horizontal yellow line */}
               <View
                 style={{
@@ -67,26 +67,29 @@ const AssessPhysicalRestraint = () => {
                 }}
               />
               <i className="i">
-                Physically restrains or threatens to physically restrain another
-                person
+                Knowingly destroys, conceals, removes, confiscates or possesses
+                any actual or purported passport or other immigration document,
+                or any other actual or purported government identification
+                document, of another person.
               </i>
               <hr className="divider2"></hr>
               <div className="definitionHeader">
                 <h2 className="h2">Lay Definition</h2>
                 <div className="definition">
-                  Physical restraint is not defined under Massachusetts law.
-                  Federally, it has been defined generally as purposely limiting
-                  or obstructing the freedom of a person’s bodily movement. This
-                  can range from using locks on doors or windows to more subtle
-                  forms of control that restrict another person’s ability to
-                  move around.
+                  This includes taking someone’s identity document for any
+                  period of time, even if it is brief. In addition, it can
+                  include tearing or mutilating identity documents related to
+                  work.
                 </div>
               </div>
               <div className="definitionHeader">
                 <h2 className="h2">Legal Definition</h2>
                 <div className="definition">
-                  There is currently no statutory or case law definition of
-                  physical restraint under Massachusetts law.
+                  Under Massachusetts law, this includes anyone who knowingly
+                  destroys, conceals, removes, confiscates or possesses any
+                  actual or purported passport or other immigration document, or
+                  any other actual or purported government identification
+                  document, of another person. M.G.L. ch. 265, § 49.
                 </div>
                 <div className="definitionHeader">
                   <h2 className="h2">Evaluate</h2>
@@ -99,12 +102,12 @@ const AssessPhysicalRestraint = () => {
                       <Accordion.Header>
                         <Container>
                           <Row>
-                            <h5 className="h5">Question 1/7</h5>
+                            <h5 className="h5">Question 1/5</h5>
                           </Row>
                           <Row>
                             <p class="question">
-                              Did the perpetrator lock the windows or doors
-                              where the worker was residing or working?
+                              Did the perpetrator ever take, hide, or confiscate
+                              the worker’s passport for any period of time?
                             </p>
                           </Row>
                         </Container>
@@ -142,11 +145,12 @@ const AssessPhysicalRestraint = () => {
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5 className="h5">Question 2/7</h5>
+                          <h5 className="h5">Question 2/5</h5>
                         </Row>
                         <Row>
                           <p class="question">
-                            Was the worker monitored by the perpetrator?
+                            Did the perpetrator ever take or hide any other
+                            identity documents of the worker?
                           </p>
                         </Row>
                       </Container>
@@ -183,12 +187,12 @@ const AssessPhysicalRestraint = () => {
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5 className="h5">Question 3/7</h5>
+                          <h5 className="h5">Question 3/5</h5>
                         </Row>
                         <Row>
                           <p class="question">
-                            Was the worker’s movement restricted in any way by
-                            the perpetrator?
+                            Did the perpetrator ever destroy any of the worker’s
+                            identity documents?
                           </p>
                         </Row>
                       </Container>
@@ -225,12 +229,13 @@ const AssessPhysicalRestraint = () => {
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5 className="h5">Question 4/7</h5>
+                          <h5 className="h5">Question 4/5</h5>
                         </Row>
                         <Row>
                           <p class="question">
-                            Did the perpetrator kidnap or threaten to kidnap the
-                            worker?
+                            Did the worker ever lack access to their identity
+                            documents, such as passports, work permits, birth
+                            certificates?
                           </p>
                         </Row>
                       </Container>
@@ -267,96 +272,14 @@ const AssessPhysicalRestraint = () => {
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5 className="h5">Question 5/7</h5>
+                          <h5 className="h5">Question 5/5</h5>
                         </Row>
                         <Row>
                           <p class="question">
-                            Did the perpetrator hold the worker against will?
-                          </p>
-                        </Row>
-                      </Container>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <RadioGroup row value={value} onChange={handleChange}>
-                        <div className="yesButton">
-                          <FormControlLabel
-                            value="Yes"
-                            control={<Radio color="primary" />}
-                            label="Yes"
-                          />
-                        </div>
-                        <div className="noButton">
-                          <FormControlLabel
-                            value="No"
-                            control={<Radio color="primary" />}
-                            label="No"
-                          />
-                        </div>
-                        <div className="idkButton">
-                          <FormControlLabel
-                            value="I don't know"
-                            control={<Radio color="primary" />}
-                            label="I don't know"
-                          />
-                        </div>
-                      </RadioGroup>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </div>
-                <div className="accordionElement">
-                  <Accordion.Item eventKey="6">
-                    <Accordion.Header>
-                      <Container>
-                        <Row>
-                          <h5 className="h5">Question 6/7</h5>
-                        </Row>
-                        <Row>
-                          <p class="question">
-                            Did the worker have limited communication with
-                            family and/or friends?
-                          </p>
-                        </Row>
-                      </Container>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <RadioGroup row value={value} onChange={handleChange}>
-                        <div className="yesButton">
-                          <FormControlLabel
-                            value="Yes"
-                            control={<Radio color="primary" />}
-                            label="Yes"
-                          />
-                        </div>
-                        <div className="noButton">
-                          <FormControlLabel
-                            value="No"
-                            control={<Radio color="primary" />}
-                            label="No"
-                          />
-                        </div>
-                        <div className="idkButton">
-                          <FormControlLabel
-                            value="I don't know"
-                            control={<Radio color="primary" />}
-                            label="I don't know"
-                          />
-                        </div>
-                      </RadioGroup>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </div>
-                <div className="accordionElement">
-                  <Accordion.Item eventKey="7">
-                    <Accordion.Header>
-                      <Container>
-                        <Row>
-                          <h5 className="h5">Question 7/7</h5>
-                        </Row>
-                        <Row>
-                          <p class="question">
-                            Did the perpetrator ever physically restrain or
-                            threaten to physically restrain the worker in any
-                            other way?
+                            Did the perpetrator ever tear, mutilate, destroy,
+                            conceal, remove, confiscate, or possess any of the
+                            worker's immigration documents or any other identity
+                            documents?
                           </p>
                         </Row>
                       </Container>
@@ -401,4 +324,4 @@ const AssessPhysicalRestraint = () => {
   );
 };
 
-export default AssessPhysicalRestraint;
+export default AssessIdentityDocuments;
