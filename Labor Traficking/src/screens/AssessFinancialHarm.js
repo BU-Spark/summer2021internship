@@ -40,11 +40,11 @@ const AssessFinancialHarm = () => {
                     </li>
                   </Breadcrumb.Item>
                   <Breadcrumb.Item href="/Assess">Assess</Breadcrumb.Item>
-                  <Breadcrumb.Item active>Abuse of Law</Breadcrumb.Item>
+                  <Breadcrumb.Item active>Financial Harm</Breadcrumb.Item>
                 </Breadcrumb>
               </ol>
               <hr className="divider"></hr>
-              <h1 className="h1">Abuse of Law</h1>
+              <h1 className="h1">Financial Harm</h1>
               {/* horizontal yellow line */}
               <View
                 style={{
@@ -62,24 +62,22 @@ const AssessFinancialHarm = () => {
               <div className="definitionHeader">
                 <h2 className="h2">Lay Definition</h2>
                 <div className="definition">
-                  Abuse of the legal process under federal law includes the use
-                  or threatened use of a law or legal process, whether
-                  administrative, civil, or criminal, in any manner or for any
-                  purpose for which the law was not designed. A common example
-                  is a threat of deportation by an employer.{" "}
+                    Financial harm is when a perpetrator puts the worker in a detrimental 
+                    position in relation to wealth, property, or other monetary benefits 
+                    through extortion, criminal usury, or illegal employment contracts. 
+                    This might include a situation where the perpetrator uses an illegal 
+                    employment contract to lure a worker to work in demeaning conditions.{" "}
                 </div>
               </div>
               <div className="definitionHeader">
                 <h2 className="h2">Legal Definition</h2>
                 <div className="definition">
-                  There is currently no statutory or case law definition of
-                  abuse of legal process under Massachusetts law. Abuse of the
-                  legal process is defined federally as the use or threatened
-                  use of a law or legal process, whether administrative, civil,
-                  or criminal, in any manner or for any purpose for which the
-                  law was not designed, in order to exert pressure on another
-                  person to cause that person to take some action or refrain
-                  from taking some action. 22 U.S.C. § 7102(1).
+                    “Financial harm” is defined as a detrimental position in relation 
+                    to wealth, property or other monetary benefits that occurs as a 
+                    result of another person’s illegal act including, but not limited 
+                    to, extortion under by section 25, a violation of section 49 of 
+                    chapter 271 (“Criminal Usury”), or illegal employment contracts.” 
+                    M.G.L. ch. 265, § 49.
                 </div>
               </div>
               <div className="definitionHeader">
@@ -94,12 +92,11 @@ const AssessFinancialHarm = () => {
                       <Accordion.Header>
                         <Container>
                           <Row>
-                            <h5 className="h5">Question 1/4</h5>
+                            <h5 className="h5">Question 1/12</h5>
                           </Row>
                           <Row>
                             <p class="question">
-                              Did the perpetrator threaten the worker with
-                              deportation?
+                                Was the worker paid less than minimum wage?
                             </p>
                           </Row>
                         </Container>
@@ -139,12 +136,11 @@ const AssessFinancialHarm = () => {
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5 className="h5">Question 2/4</h5>
+                          <h5 className="h5">Question 2/12</h5>
                         </Row>
                         <Row>
                           <p class="question">
-                            Did the perpetrator discuss immigration status or
-                            the lack of immigration status?
+                            Did the perpetrator ever open a bank account in the worker's name?
                           </p>
                         </Row>
                       </Container>
@@ -181,13 +177,11 @@ const AssessFinancialHarm = () => {
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5 className="h5">Question 3/4</h5>
+                          <h5 className="h5">Question 3/12</h5>
                         </Row>
                         <Row>
                           <p class="question">
-                            Did the perpetrator ever threaten the worker with
-                            contacting the 'authorities,' law enforcement, or
-                            the government in order to cause the worker fear?
+                            Did the perpetrator ever withdraw money from the worker’s bank account?
                           </p>
                         </Row>
                       </Container>
@@ -224,12 +218,339 @@ const AssessFinancialHarm = () => {
                     <Accordion.Header>
                       <Container>
                         <Row>
-                          <h5 className="h5">Question 4/4</h5>
+                          <h5 className="h5">Question 4/12</h5>
                         </Row>
                         <Row>
                           <p class="question">
-                            Did the perpetrator ever abuse or threaten to abuse
-                            the law or legal process in any other way?
+                            Did the perpetrator ever obtain credit cards or other items using the worker’s identity?
+                          </p>
+                        </Row>
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                    <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
+                          <FormControlLabel
+                            value="Yes"
+                            control={<Radio color="primary" />}
+                            label="Yes"
+                          />
+                        </div>
+                        <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio color="primary" />}
+                            label="No"
+                          />
+                        </div>
+                        <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
+                            control={<Radio color="primary" />}
+                            label="I don't know"
+                          />
+                        </div>
+                      </RadioGroup>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="5">
+                    <Accordion.Header>
+                      <Container>
+                        <Row>
+                          <h5 className="h5">Question 5/12</h5>
+                        </Row>
+                        <Row>
+                          <p class="question">
+                            Did the worker have a debt owed to the perpetrator?
+                          </p>
+                        </Row>
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                    <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
+                          <FormControlLabel
+                            value="Yes"
+                            control={<Radio color="primary" />}
+                            label="Yes"
+                          />
+                        </div>
+                        <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio color="primary" />}
+                            label="No"
+                          />
+                        </div>
+                        <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
+                            control={<Radio color="primary" />}
+                            label="I don't know"
+                          />
+                        </div>
+                      </RadioGroup>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="6">
+                    <Accordion.Header>
+                      <Container>
+                        <Row>
+                          <h5 className="h5">Question 6/12</h5>
+                        </Row>
+                        <Row>
+                          <p class="question">
+                            Did the perpetrator ever subject the worker to unreasonable deductions for items, such as food, housing, or transportation?
+                          </p>
+                        </Row>
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                    <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
+                          <FormControlLabel
+                            value="Yes"
+                            control={<Radio color="primary" />}
+                            label="Yes"
+                          />
+                        </div>
+                        <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio color="primary" />}
+                            label="No"
+                          />
+                        </div>
+                        <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
+                            control={<Radio color="primary" />}
+                            label="I don't know"
+                          />
+                        </div>
+                      </RadioGroup>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="7">
+                    <Accordion.Header>
+                      <Container>
+                        <Row>
+                          <h5 className="h5">Question 7/12</h5>
+                        </Row>
+                        <Row>
+                          <p class="question">
+                            Was the worker paid overtime?
+                          </p>
+                        </Row>
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                    <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
+                          <FormControlLabel
+                            value="Yes"
+                            control={<Radio color="primary" />}
+                            label="Yes"
+                          />
+                        </div>
+                        <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio color="primary" />}
+                            label="No"
+                          />
+                        </div>
+                        <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
+                            control={<Radio color="primary" />}
+                            label="I don't know"
+                          />
+                        </div>
+                      </RadioGroup>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="8">
+                    <Accordion.Header>
+                      <Container>
+                        <Row>
+                          <h5 className="h5">Question 8/12</h5>
+                        </Row>
+                        <Row>
+                          <p class="question">
+                            Did the worker ever fail to receive accurate paychecks or fail to be paid for all hours worked?
+                          </p>
+                        </Row>
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                    <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
+                          <FormControlLabel
+                            value="Yes"
+                            control={<Radio color="primary" />}
+                            label="Yes"
+                          />
+                        </div>
+                        <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio color="primary" />}
+                            label="No"
+                          />
+                        </div>
+                        <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
+                            control={<Radio color="primary" />}
+                            label="I don't know"
+                          />
+                        </div>
+                      </RadioGroup>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="9">
+                    <Accordion.Header>
+                      <Container>
+                        <Row>
+                          <h5 className="h5">Question 9/12</h5>
+                        </Row>
+                        <Row>
+                          <p class="question">
+                            Were the worker’s wages ever withheld?
+                          </p>
+                        </Row>
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                    <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
+                          <FormControlLabel
+                            value="Yes"
+                            control={<Radio color="primary" />}
+                            label="Yes"
+                          />
+                        </div>
+                        <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio color="primary" />}
+                            label="No"
+                          />
+                        </div>
+                        <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
+                            control={<Radio color="primary" />}
+                            label="I don't know"
+                          />
+                        </div>
+                      </RadioGroup>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="10">
+                    <Accordion.Header>
+                      <Container>
+                        <Row>
+                          <h5 className="h5">Question 10/12</h5>
+                        </Row>
+                        <Row>
+                          <p class="question">
+                            Did the worker have to pay rent or pay for other basic necessities to the perpetrator?
+                          </p>
+                        </Row>
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                    <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
+                          <FormControlLabel
+                            value="Yes"
+                            control={<Radio color="primary" />}
+                            label="Yes"
+                          />
+                        </div>
+                        <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio color="primary" />}
+                            label="No"
+                          />
+                        </div>
+                        <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
+                            control={<Radio color="primary" />}
+                            label="I don't know"
+                          />
+                        </div>
+                      </RadioGroup>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="11">
+                    <Accordion.Header>
+                      <Container>
+                        <Row>
+                          <h5 className="h5">Question 11/12</h5>
+                        </Row>
+                        <Row>
+                          <p class="question">
+                            Did the perpetrator ever cause or threaten to cause financial harm in any other way?
+                          </p>
+                        </Row>
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                    <RadioGroup row value={value} onChange={handleChange}>
+                        <div className="yesButton">
+                          <FormControlLabel
+                            value="Yes"
+                            control={<Radio color="primary" />}
+                            label="Yes"
+                          />
+                        </div>
+                        <div className="noButton">
+                          <FormControlLabel
+                            value="No"
+                            control={<Radio color="primary" />}
+                            label="No"
+                          />
+                        </div>
+                        <div className="idkButton">
+                          <FormControlLabel
+                            value="I don't know"
+                            control={<Radio color="primary" />}
+                            label="I don't know"
+                          />
+                        </div>
+                      </RadioGroup>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
+                <div className="accordionElement">
+                  <Accordion.Item eventKey="12">
+                    <Accordion.Header>
+                      <Container>
+                        <Row>
+                          <h5 className="h5">Question 12/12</h5>
+                        </Row>
+                        <Row>
+                          <p class="question">
+                            Did the perpetrator ever cause or threaten to cause financial harm in any other way?
                           </p>
                         </Row>
                       </Container>
