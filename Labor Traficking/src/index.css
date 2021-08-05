@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -232,4 +232,14 @@ b {
 .assessNavBar .nav-link {
   color: white;
   background-color: #19578d;
+}
+
+.assessNavBar .nav-link:hover {
+  cursor: pointer;
+  color: #19578d;
+  background-color: #f4c346;
+}
+
+.dropdown-item {
+  width: 80%;
 }

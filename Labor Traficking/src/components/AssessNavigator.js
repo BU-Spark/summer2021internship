@@ -6,7 +6,7 @@ const AssessNavigator = () => {
     return (
         <div className="assessNavBar">
             <Nav defaultActiveKey="/home" className="flex-column">
-                <LinkContainer to='/'>
+                <LinkContainer to='/assess'>
                     <Nav.Link>Back to all topics</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to='/assess/SeriousHarm'>
