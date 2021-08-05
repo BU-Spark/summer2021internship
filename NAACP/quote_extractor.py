@@ -81,7 +81,7 @@ def generate_clean_text_file(file_names):
         df['text'] = df['text'].apply(clean_articles)
         df.to_csv(f'data/processed/bostonglobe-{key}.txt', sep='\t', header=None, index=False)
 
-def extract_quotes_from_json(file_path, quotes_dict):
+def extract_quotes_from_json(file_path, all_quotes):
     """
         Parse all content extracted by the Core NLP pipeline and 
         store the quotes and their respective authors in a dict 
@@ -89,8 +89,14 @@ def extract_quotes_from_json(file_path, quotes_dict):
     with open(file_path) as f:
         file = json.load(f)
         for item in file["quotes"]:
-            if item['speaker'] != 'Unknown':
-                quotes_dict[item['speaker']].append(item['text'])
+            speaker = item.get('speaker')
+            if speaker not in ['his', 'her', 'Unknown']:
+                quote = {
+                    'author': item['speaker'],
+                    'quote': item['text'],
+                    'indentiy': '',
+                }
+                all_quotes.append(quote)
 
 
 def extract_and_attribute_quotes():
@@ -101,14 +107,14 @@ def extract_and_attribute_quotes():
     extracted_details_path = 'data/processed/extracted_details'
     for folder in os.listdir(extracted_details_path):
         folder_path = f"{extracted_details_path}/{folder}"
-        all_quotes  = defaultdict(list)
+        all_quotes =[]
         if os.path.isdir(folder_path):
             for file_name in os.listdir(folder_path):
                 file_path = f"{folder_path}/{file_name}"
                 if (file_name.endswith('.json')):
                     extract_quotes_from_json(file_path, all_quotes)
 
-        df = pd.DataFrame.from_dict(all_quotes, orient='index')
+        df = pd.DataFrame.from_records(all_quotes)
         print(df.head(20))
         df.to_csv(f'data/processed/extracted_quotes/bostonglobe-{folder}.csv')
 
