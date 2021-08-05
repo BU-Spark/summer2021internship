@@ -26,8 +26,8 @@
   }
   
   /* title text */
-  .h1c {
-    width: 600px;
+  .h1 {
+    width: 333px;
     margin-top: 20px;
     height: 55px;
     font-weight: 900;
@@ -86,9 +86,13 @@
     margin-bottom: 35px;
     padding-right: 40px;
   }
-
+  
   .accordion-item {
     border-right: 0;
+  }
+
+  .accordionMargin {
+    padding-right: 40px;
   }
   
   /* RADIO BUTTON STYLING */
@@ -117,4 +121,3 @@
     padding-left: 1207px;
     padding-bottom: 80px;
   }
-  

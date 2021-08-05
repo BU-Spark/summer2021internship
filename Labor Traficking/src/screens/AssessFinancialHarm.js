@@ -1,4 +1,4 @@
-import "../styles/AssessAbuseOfLaw.css";
+import "../styles/AssessFinancialHarm.css";
 import React from "react";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
@@ -8,6 +8,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import AssessNavigator from "../components/AssessNavigator";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Accordion from "react-bootstrap/Accordion";
+import styled from "styled-components";
 
 <link
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
@@ -20,6 +21,15 @@ const AssessFinancialHarm = () => {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+
+  const Button = styled.button`
+  background-color: #144d7e;
+  color: #F4C346;
+  font-size: 25px;
+  padding: 10px 40px;
+  margin: 10px -15px;
+  cursor: pointer;
+`;
 
   return (
     <div>
@@ -85,6 +95,7 @@ const AssessFinancialHarm = () => {
                   <h2 className="h2">Evaluate</h2>
                 </div>
               </div>
+              <div className="accordionMargin">
               <Accordion>
                 <div className="accordionElement">
                   <Accordion.Item eventKey="1">
@@ -108,21 +119,21 @@ const AssessFinancialHarm = () => {
                           <div className="yesButton">
                             <FormControlLabel
                               value="Yes"
-                              control={<Radio />}
+                              control={<Radio color="primary" />}
                               label="Yes"
                             />
                           </div>
                           <div className="noButton">
                             <FormControlLabel
                               value="No"
-                              control={<Radio />}
+                              control={<Radio color="primary" />}
                               label="No"
                             />
                           </div>
                           <div className="idkButton">
                             <FormControlLabel
                               value="I don't know"
-                              control={<Radio />}
+                              control={<Radio color="primary" />}
                               label="I don't know"
                             />
                           </div>
@@ -583,12 +594,17 @@ const AssessFinancialHarm = () => {
                   </Accordion.Item>
                 </div>
               </Accordion>
+              </div>
             </div>
           </Col>
         </Row>
       </Container>
-    </div>
-  );
+
+  <div className="button">
+  <Button>EVALUATE</Button>
+</div>
+</div>
+);
 };
 
 export default AssessFinancialHarm;

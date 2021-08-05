@@ -28,7 +28,7 @@ const AssessPhysicalRestraint = () => {
     color: #F4C346;
     font-size: 25px;
     padding: 10px 40px;
-    margin: 10px 0px
+    margin: 10px -15px;
     cursor: pointer;
   `;
 
@@ -91,7 +91,8 @@ const AssessPhysicalRestraint = () => {
                 <div className="definitionHeader">
                   <h2 className="h2">Evaluate</h2>
                 </div>
-              </div>
+              </div>.
+              <div className="accordionMargin">
               <Accordion>
                 <div className="accordionElement">
                   <Accordion.Item eventKey="1">
@@ -389,6 +390,7 @@ const AssessPhysicalRestraint = () => {
                   </Accordion.Item>
                 </div>
               </Accordion>
+              </div>
             </div>
           </Col>
         </Row>

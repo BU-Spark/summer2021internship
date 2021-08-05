@@ -28,7 +28,7 @@ const AssessSeriousHarm = () => {
     color: #F4C346;
     font-size: 25px;
     padding: 10px 40px;
-    margin: 10px 0px
+    margin: 10px -15px;
     cursor: pointer;
   `;
 
@@ -99,10 +99,10 @@ const AssessSeriousHarm = () => {
                   <h2 className="h2">Evaluate</h2>
                 </div>
               </div>
+              <div className="accordionMargin">
               <Accordion>
                 <div className="accordionElement">
                   <Accordion.Item eventKey="1">
-                    <div className="accordionHeader">
                       <Accordion.Header>
                         <Container>
                           <Row>
@@ -116,7 +116,6 @@ const AssessSeriousHarm = () => {
                           </Row>
                         </Container>
                       </Accordion.Header>
-                    </div>
                     <Accordion.Body>
                       <RadioGroup row value={value} onChange={handleChange}>
                         <div className="yesButton">
@@ -481,6 +480,7 @@ const AssessSeriousHarm = () => {
                   </Accordion.Item>
                 </div>
               </Accordion>
+              </div>
             </div>
           </Col>
         </Row>

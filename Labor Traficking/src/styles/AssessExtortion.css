@@ -87,6 +87,10 @@ p.question {
   padding-right: 40px;
 }
 
+.accordion-item {
+  border-right: 0;
+}
+
 /* RADIO BUTTON STYLING */
 
 .yesButton {

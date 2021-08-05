@@ -28,7 +28,7 @@ const AssessIdentityDocuments = () => {
     color: #F4C346;
     font-size: 25px;
     padding: 10px 40px;
-    margin: 10px 0px
+    margin: 10px -15px;
     cursor: pointer;
   `;
 
@@ -95,6 +95,7 @@ const AssessIdentityDocuments = () => {
                   <h2 className="h2">Evaluate</h2>
                 </div>
               </div>
+              <div className="accordionMargin">
               <Accordion>
                 <div className="accordionElement">
                   <Accordion.Item eventKey="1">
@@ -312,6 +313,7 @@ const AssessIdentityDocuments = () => {
                   </Accordion.Item>
                 </div>
               </Accordion>
+              </div>
             </div>
           </Col>
         </Row>
