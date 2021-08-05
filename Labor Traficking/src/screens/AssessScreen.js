@@ -62,7 +62,7 @@ const AssessScreen = () => {
                   </label>
                 </div>
                 <a href="/">
-                  VIEW QUESTIONS<i className="fas fa-arrow-right"></i>{" "}
+                  <Link to="/assess/seriousharm">VIEW QUESTIONS</Link><i className="fas fa-arrow-right"></i>{" "}
                 </a>
               </div>
             </Col>
@@ -74,6 +74,7 @@ const AssessScreen = () => {
                     borderBottomColor: "#F4C346",
                     borderBottomWidth: 3,
                     height: -5,
+
                     width: 90,
                     marginBottom: 35,
                   }}
@@ -86,7 +87,7 @@ const AssessScreen = () => {
                 </div>
                 <div>
                   <a href="/">
-                    VIEW QUESTIONS<i className="fas fa-arrow-right"></i>{" "}
+                    <Link to="/assess/physicalrestraint">VIEW QUESTIONS</Link><i className="fas fa-arrow-right"></i>{" "}
                   </a>
                 </div>
               </div>
@@ -110,7 +111,7 @@ const AssessScreen = () => {
                 </div>
                 <div>
                   <a href="/">
-                    VIEW QUESTIONS<i className="fas fa-arrow-right"></i>{" "}
+                    <Link to="/assess/abuseoflaw">VIEW QUESTIONS</Link><i className="fas fa-arrow-right"></i>{" "}
                   </a>
                 </div>
               </div>
@@ -159,7 +160,7 @@ const AssessScreen = () => {
                   </label>
                 </div>
                   <a href="/">
-                    VIEW QUESTIONS<i className="fas fa-arrow-right"></i>{" "}
+                    <Link to="/assess/financialharm">VIEW QUESTIONS</Link><i className="fas fa-arrow-right"></i>{" "}
                   </a>
                 </div>
               </div>
@@ -185,7 +186,7 @@ const AssessScreen = () => {
                 </div>
                 <div>
                   <a href="/">
-                    VIEW QUESTIONS<i className="fas fa-arrow-right"></i>{" "}
+                    <Link to="/assess/identitydocuments">VIEW QUESTIONS</Link><i className="fas fa-arrow-right"></i>{" "}
                   </a>
                 </div>
               </div>
