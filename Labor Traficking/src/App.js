@@ -13,6 +13,7 @@ import AssessSeriousHarm from './screens/AssessSeriousHarm';
 import AssessPhysicalRestraint from './screens/AssessPhysicalRestraint';
 import AssessAbuseOfLaw from './screens/AssessAbuseOfLaw';
 import AssessIdentityDocuments from './screens/AssessIdentityDocuments';
+import AssessFinancialHarm from './screens/AssessFinancialHarm';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path='/assess/Extortion' component={AssessExtortion} exact />
           <Route path='/assess/AbuseOfLaw' component={AssessAbuseOfLaw} exact />
           <Route path='/assess/IdentityDocuments' component={AssessIdentityDocuments} exact />
+          <Route path='/assess/FinancialHarm' component={AssessFinancialHarm} exact />
         </Container>
       </main>
       <Footer />
