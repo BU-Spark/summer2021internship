@@ -1,0 +1,7 @@
+google-cloud-storage==1.38.0
+google-cloud-vision==2.0.0
+numpy @ file:///opt/concourse/worker/volumes/live/660b80d1-747e-493a-6b34-55d0a0e21650/volume/numpy_and_numpy_base_1626271790683/work
+pandas==1.2.4
+python-dotenv==0.17.1
+regex @ file:///opt/concourse/worker/volumes/live/6dbf579b-ae2b-4710-566e-2bd99f64dea6/volume/regex_1625610100180/work
+requests @ file:///tmp/build/80754af9/requests_1608241421344/work
