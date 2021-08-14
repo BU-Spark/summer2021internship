@@ -1,0 +1,10 @@
+.navbar {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.imageLogo {
+  position: absolute;
+  left: 1%;
+  width: 5%;
+}

@@ -1,6 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { View } from "react-native";
+import "../styles/HomeScreen.css";
 
 const HomeScreen = () => {
     return (
@@ -11,10 +12,19 @@ const HomeScreen = () => {
             </div>
 
             <div className="middleBanner">
-                <h3>Our Tools</h3>
+                <h3><b>Our Tools</b></h3>
+                <View
+                    style={{
+                        borderBottomColor: "#F4C346",
+                        borderBottomWidth: 5,
+                        height: -5,
+                        width: 180,
+                        marginBottom: 35,
+                    }}
+                />
                 <div className="containers">
                     <img alt="assess" src="/icons/Groupassess.svg" className="card__icon"></img>
-                    <h4>Assess</h4>
+                    <h4><b>Assess</b></h4>
                     <View
                         style={{
                             borderBottomColor: "#F4C346",

@@ -19,6 +19,7 @@ main {
 
 .bottomBanner h4 {
   color: #fff;
+  text-transform: capitalize;
 }
 
 .bottomBanner h5 {
@@ -185,10 +186,14 @@ h6 {
 .middleBanner h4 {
   padding-top: 3%;
   color: #19578d;
+  text-transform: capitalize;
 }
 
 .middleBanner h3 {
   color: #19578d;
+  text-transform: capitalize;
+  font-size: 300%;
+  font-weight: bold;
 }
 
 .leftBox {

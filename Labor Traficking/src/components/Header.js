@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles/Header.css";
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
 
@@ -8,7 +9,9 @@ const Header = () => {
             <Navbar bg="light" expand="lg" collapseOnSelect className="myFontColor">
                 <Container>
                     <LinkContainer to='/'>
-                        <Navbar.Brand>RESULT</Navbar.Brand>
+                        <Navbar.Brand>
+                            <img alt="result" src="/icons/MainLogo.svg" className="imageLogo"></img>
+                        </Navbar.Brand>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
