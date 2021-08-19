@@ -8,7 +8,7 @@ const MassLawScreen = () => {
                 <img alt="massLaw" src="/icons/HeaderTextMassLaw.svg" className="image2"></img>
             </div>
             <div className="middleBanner">
-                <h3>Massachusettes Law</h3>
+                <h3>Massachusetts Law</h3>
                 <img alt="line" src="/icons/yellowline.svg" className="yellowLineSize"></img>
                 <div>
                     <i>

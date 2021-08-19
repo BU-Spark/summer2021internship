@@ -6,6 +6,12 @@ import "../styles/HomeScreen.css";
 const HomeScreen = () => {
     return (
         <>
+            <head>
+                <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"></meta>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
+                <meta name="HandheldFriendly" content="true"></meta>
+            </head>        
+
             <div className="topBanner">
                 <img alt="topBanner" src="/icons/header.svg" className="image1"></img>
                 <img alt="result" src="/icons/HeaderTextResult.svg" className="image2"></img>
