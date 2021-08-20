@@ -72,7 +72,7 @@ const MassLawScreen = () => {
                     <h4>Federal Criminal Statutes</h4>
                     <br />
                 </div>
-                <div>
+                <div style={{paddingBottom: '50px'}}> 
                     There are also federal criminal statutes that address labor trafficking crimes, such as forced labor and involuntary servitude. Click here to read more about the federal crimes of labor trafficking.
 
                     Violations under federal law must be referred to federal authorities.
