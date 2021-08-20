@@ -28,6 +28,8 @@ const HomeScreen = () => {
                         marginBottom: 35,
                     }}
                 />
+
+                <div style={{marginLeft:'auto', marginRight: 'auto', display: 'flex', justifyContent: 'space-evenly', flexDirection:'row', flexFlow:'row wrap'}}>
                 <div className="containers">
                     <img alt="assess" src="/icons/Groupassess.svg" className="card__icon"></img>
                     <h4><b>Assess</b></h4>
@@ -38,10 +40,12 @@ const HomeScreen = () => {
                             height: -5,
                             width: 180,
                             marginBottom: 35,
+                            position: 'relative',
+                            
                         }}
-                    />
+                    /> 
                     <label>Determine if your case is labor trafficking</label>
-                    <Link to="/Assess">GET STARTED</Link> <i className="fas fa-arrow-right"></i>
+                    <Link to="/Assess" style={{marginTop:'2rem'}}>GET STARTED</Link> <i className="fas fa-arrow-right"></i>
                 </div>
                 <div className="containers">
                     <img alt="prepare" src="/icons/Groupprepare.svg" className="card__icon"></img>
@@ -73,6 +77,7 @@ const HomeScreen = () => {
                     <label>Browse resources avaiable in your area</label>
                     <Link to="/Resources">EXPLORE RESOURCES</Link> <i className="fas fa-arrow-right"></i>
                 </div>
+            </div>
             </div>
 
             <div className="bottomBanner">

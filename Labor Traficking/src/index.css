@@ -127,13 +127,13 @@ h6 {
   border-color: #19578d;
   border-style: solid;
   padding: 10px;
-  margin-left: 100px;
   margin-bottom: 20px;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-right: 3%;
   padding-left: 3%;
+  align-items: center;
 }
 
 .topBanner {
