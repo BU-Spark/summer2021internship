@@ -35,13 +35,35 @@ const ResourcesScreen = () => {
 
     return (
         <>
+            <div class="col-auto my-1">
+                <form>
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Pick a Category</label>
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Select a Category</option>
+                    <option value="1">Shelter</option>
+                    <option value="2">Case Management</option>
+                    <option value="3">Medical</option>
+                    <option value="4">Legal Aid</option>
+                    <option value="5">Food</option>
+                    <option value="6">Trasportation</option>
+                </select>
+                </form>
 
-            <div className="topBanner">
-                <img alt="topBanner" src="/icons/header.svg" className="image1"></img>
-                <img alt="result" src="/icons/HeaderTextResult.svg" className="image2"></img>
+                <form>
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Pick a Category</label>
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Select a Category</option>
+                    <option value="1">Shelter</option>
+                    <option value="2">Case Management</option>
+                    <option value="3">Medical</option>
+                    <option value="4">Legal Aid</option>
+                    <option value="5">Food</option>
+                    <option value="6">Trasportation</option>
+                </select>
+                </form>
+
             </div>
-
-            <div>
+            <div style={{}}>
                 {/**<div className="sidebar">
                     Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                 </div>*/}
