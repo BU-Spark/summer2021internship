@@ -70,13 +70,24 @@ const AssessFinancialHarm = () => {
               </i>
               <hr className="divider2"></hr>
               <div className="definitionHeader">
-                <h2 className="h2">Lay Definition</h2>
+                {/* <h2 className="h2">Lay Definition</h2> */}
                 <div className="definition">
                     Financial harm is when a perpetrator puts the worker in a detrimental 
                     position in relation to wealth, property, or other monetary benefits 
                     through extortion, criminal usury, or illegal employment contracts. 
                     This might include a situation where the perpetrator uses an illegal 
                     employment contract to lure a worker to work in demeaning conditions.{" "}
+                </div>
+              </div>
+              <div className="definitionHeader">
+                <h2 className="h2">Examples:</h2>
+                <div className="definition" style={{lineHeight: '40px'}}>
+                  <ul>
+                    <li>An employer refuses to pay wages to the worker for the work she has done.</li>
+                    <li>A worker makes one mistake on the job, and the employer refuses to pay him that week.</li>
+                    <li>An employer tells the worker that he has no wages to be paid out because of the costs the employer 
+                      is incurring to house, feed, transport him to the worksite each day.</li>
+                  </ul>
                 </div>
               </div>
               <div className="definitionHeader">

@@ -74,12 +74,22 @@ const AssessIdentityDocuments = () => {
               </i>
               <hr className="divider2"></hr>
               <div className="definitionHeader">
-                <h2 className="h2">Lay Definition</h2>
+                {/* <h2 className="h2">Lay Definition</h2> */}
                 <div className="definition">
                   This includes taking someone’s identity document for any
                   period of time, even if it is brief. In addition, it can
                   include tearing or mutilating identity documents related to
                   work.
+                </div>
+              </div>
+              <div className="definitionHeader">
+                <h2 className="h2">Examples:</h2>
+                <div className="definition">
+                  <ul>
+                    <li>An employer demands that the worker’s passport remain with the employer.
+                       The employer keeps it in an undisclosed location.</li>
+                  </ul>
+
                 </div>
               </div>
               <div className="definitionHeader">

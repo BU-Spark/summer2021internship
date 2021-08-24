@@ -74,13 +74,22 @@ const AssessAbuseOfLaw = () => {
               </i>
               <hr className="divider2"></hr>
               <div className="definitionHeader">
-                <h2 className="h2">Lay Definition</h2>
+                {/* <h2 className="h2">Lay Definition</h2> */}
                 <div className="definition">
                   Abuse of the legal process under federal law includes the use
                   or threatened use of a law or legal process, whether
                   administrative, civil, or criminal, in any manner or for any
                   purpose for which the law was not designed. A common example
                   is a threat of deportation by an employer.{" "}
+                </div>
+              </div>
+              <div className="definitionHeader">
+                <h2 className="h2">Examples:</h2>
+                <div className="definition" style={{lineHeight: '40px'}}>
+                  <ul>
+                    <li>An employer threatens to deport the worker or "call immigration" if he stops working for the employer.</li>
+                    <li>An employer threatens to falsely accuse the worker of a crime if she fails to work.</li>
+                  </ul>
                 </div>
               </div>
               <div className="definitionHeader">

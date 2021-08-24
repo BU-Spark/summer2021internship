@@ -71,7 +71,7 @@ const AssessSeriousHarm = () => {
               </i>
               <hr className="divider2"></hr>
               <div className="definitionHeader">
-                <h2 className="h2">Lay Definition</h2>
+                {/* <h2 className="h2">Lay Definition</h2> */}
                 <div className="definition">
                   Serious harm may be physical and nonphysical, including
                   psychological, financial, or reputational harm. Generally, the
@@ -80,6 +80,16 @@ const AssessSeriousHarm = () => {
                   person of the same background and in the same circumstances to
                   perform or to continue performing labor or services in order
                   to avoid incurring that harm.
+                </div>
+              </div>
+              <div className="definitionHeader">
+                <h2 className="h2">Examples:</h2>
+                <div className="definition" style={{lineHeight: '40px'}}>
+                  <ul>
+                    <li>An employer kicks the worker in the morning to wake her up and to start working</li>
+                    <li>When the worker asks for his wages, the employers gets angry and hits the worker</li>
+                  </ul>
+
                 </div>
               </div>
               <div className="definitionHeader">

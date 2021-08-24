@@ -72,7 +72,7 @@ const AssessPhysicalRestraint = () => {
               </i>
               <hr className="divider2"></hr>
               <div className="definitionHeader">
-                <h2 className="h2">Lay Definition</h2>
+                {/* <h2 className="h2">Lay Definition</h2> */}
                 <div className="definition">
                   Physical restraint is not defined under Massachusetts law.
                   Federally, it has been defined generally as purposely limiting
@@ -80,6 +80,16 @@ const AssessPhysicalRestraint = () => {
                   can range from using locks on doors or windows to more subtle
                   forms of control that restrict another person’s ability to
                   move around.
+                </div>
+              </div>
+              <div className="definitionHeader">
+                <h2 className="h2">Examples</h2>
+                <div className="definition">
+                  <ul>
+                    <li>A domestic worker is brought to the United States by an employer. 
+                      Her employers do not permit her to leave the house unaccompanied, 
+                      and her movement is monitored by cameras.</li>
+                  </ul>
                 </div>
               </div>
               <div className="definitionHeader">

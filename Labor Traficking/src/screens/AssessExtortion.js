@@ -68,10 +68,18 @@ const AssessExtortion = () => {
               <i className="i">Engages in extortion under Massachusetts law</i>
               <hr className="divider2"></hr>
               <div className="definitionHeader">
-                <h2 className="h2">Lay Definition</h2>
+                {/* <h2 className="h2">Lay Definition</h2> */}
                 <div className="definition">
                   Extortion is the practice of trying to get something through
                   force, threats, or blackmail.
+                </div>
+              </div>
+              <div className="definitionHeader">
+                <h2 className="h2">Examples:</h2>
+                <div className="definition" style={{lineHeight: '40px'}}>
+                  <ul>
+                    <li>An employer threatens to release embarrassing photographs, unless the worker continues to work.</li>
+                  </ul>
                 </div>
               </div>
               <div className="definitionHeader">
