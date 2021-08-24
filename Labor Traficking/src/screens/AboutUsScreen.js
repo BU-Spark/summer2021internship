@@ -11,11 +11,15 @@ const AboutUsScreen = () => {
                 <div className="middleBanner">
                     <h3>Why Us?</h3>
                     <img alt="line" src="/icons/yellowline.svg" className="yellowLineSize"></img>
-                    <div>
-                        Because labor trafficking is everywhere. Because labor trafficking is difficult to see. Because we want to help answer your questions. Because we want victims on labor trafficking to know help is out there. Because we all have a role in unmasking labor trafficking.
-
-                        <b>Because the RESULT can aid in eradicating labor trafficking in Massachusetts.</b>
-
+                    <div style={{lineHeight: '50px'}}>
+                        <ul>
+                            <li>Because labor trafficking is everywhere.</li>
+                            <li>Because labor trafficking is difficult to see.</li>
+                            <li>Because we want to help answer your questions.</li>
+                            <li>Because we want victims on labor trafficking to know help is out there.</li>
+                            <li>Because we all have a role in unmasking labor trafficking.</li> 
+                            <li><b>Because the RESULT can aid in eradicating labor trafficking in Massachusetts.</b></li>   
+                        </ul>
                     </div>
                 </div>
 

@@ -25,8 +25,8 @@ const MassLawScreen = () => {
                 <div>
                     Under Massachusetts law, the crime of labor trafficking is known as Trafficking in Persons for Forced Services. This crime involves whoever knowingly:
                     <ul>
-                        <li>Subjects, or attempts to subject, another person to forced services, or recruits, entices, harbors, transports, provides or obtains by any means, or attempts to recruit, entice, harbor, transport, provide or obtain by any means, another person, intending or knowing that such person will be subjected to forced services; or</li>
-                        <li>Benefits, financially or by receiving anything of value, as a result of a violation of the above</li>
+                        <li>subjects, or attempts to subject, another person to forced services, or recruits, entices, harbors, transports, provides or obtains by any means, or attempts to recruit, entice, harbor, transport, provide or obtain by any means, another person, intending or knowing that such person will be subjected to forced services; or</li>
+                        <li>benefits, financially or by receiving anything of value, as a result of a violation of the above</li>
                     </ul>
                 </div>
 
@@ -53,7 +53,7 @@ const MassLawScreen = () => {
                     <br />
                 </div>
                 <div>
-                    Labor trafficking may overlap with other crimes, such as sex trafficking, sexual assault, wage theft, and other crimes. An investigator should be keep in mind that other violations of law may surface.
+                    Labor trafficking may overlap with other crimes, such as sex trafficking, sexual assault, wage theft, and other crimes. An investigator should keep in mind that other violations of law may surface.
                 </div>
 
                 <div>

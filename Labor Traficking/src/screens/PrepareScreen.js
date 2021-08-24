@@ -13,7 +13,7 @@ const PrepareScreen = () => {
             <div className="middleBanner">
                 <p style={{ textAlign: 'center', fontFamily: 'Roboto', fontStyle: 'italic', fontWeight: 'normal', fontSize: 20 }}>
                     <span style={{ color: "##606263" }}>Click tabs to view tips or </span>
-                    <span style={{ color: "#20548c", textDecoration: "underline", fontStyle: "italic" }}>click here to download the tips</span>
+                    <span style={{ color: "#20548c", textDecoration: "underline", fontStyle: "italic" }}>click here to download</span>
                 </p>
             </div>
             <div style={{ marginLeft:"auto", marginRight: "auto", marginBottom: 0, borderStyle: 'solid', borderColor: "rgba(20,77,126,0.51)", width: '61.875rem', paddingRight: '40px'}}>

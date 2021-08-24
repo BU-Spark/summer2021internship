@@ -44,7 +44,7 @@ const HomeScreen = () => {
                             
                         }}
                     /> 
-                    <label>Determine if your case is labor trafficking</label>
+                    <label>Determine if your case might be labor trafficking</label>
                     <Link to="/Assess" style={{marginTop:'2rem'}}>GET STARTED</Link> <i className="fas fa-arrow-right"></i>
                 </div>
                 <div className="containers">
@@ -92,7 +92,7 @@ const HomeScreen = () => {
                     }}
                 />
                 <h5>
-                    View the Massachusettes labor trafficking staute and stay informed.
+                    View the Massachusetts labor trafficking statute.
                 </h5>
                 <button type="button" className="yellowBtn myFontColor">READ MORE</button>
             </div>
