@@ -9,6 +9,7 @@ import AssessNavigator from "../components/AssessNavigator";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Accordion from "react-bootstrap/Accordion";
 import styled from "styled-components";
+import Modal from 'react-bootstrap/Modal';
 
 <link
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
@@ -21,12 +22,9 @@ const AssessAbuseOfLaw = () => {
   const [q03, setQuestion03] = React.useState("Yes");
   const [q04, setQuestion04] = React.useState("Yes");
 
-  const onClick = () => {
-    console.log('q01 is:', { q01 });
-    console.log('q02 is:', { q02 });
-    console.log('q03 is:', { q03 });
-    console.log('q04 is:', { q04 });
-  }
+  const [show, setShow] = React.useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const Button = styled.button`
   background-color: #144d7e;
@@ -286,8 +284,25 @@ const AssessAbuseOfLaw = () => {
       </Container>
 
       <div className="button">
-        <Button onClick={onClick}>EVALUATE</Button>
+        <Button onClick={handleShow}>EVALUATE</Button>
       </div>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Result</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {(q01 === 'Yes' || q02 === 'Yes' || q03 === 'Yes' || q04 === 'Yes') ?
+            <h1>Serious Harm</h1>
+            : <h1>Unclear</h1>
+          }
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            RE-EVALUATE
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
