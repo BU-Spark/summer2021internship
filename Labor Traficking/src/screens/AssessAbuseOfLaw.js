@@ -9,6 +9,7 @@ import AssessNavigator from "../components/AssessNavigator";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Accordion from "react-bootstrap/Accordion";
 import styled from "styled-components";
+import Modal from 'react-bootstrap/Modal';
 
 <link
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
@@ -16,11 +17,14 @@ import styled from "styled-components";
 />;
 
 const AssessAbuseOfLaw = () => {
-  const [value, setValue] = React.useState("Yes");
+  const [q01, setQuestion01] = React.useState("Yes");
+  const [q02, setQuestion02] = React.useState("Yes");
+  const [q03, setQuestion03] = React.useState("Yes");
+  const [q04, setQuestion04] = React.useState("Yes");
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
+  const [show, setShow] = React.useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const Button = styled.button`
   background-color: #144d7e;
@@ -98,27 +102,70 @@ const AssessAbuseOfLaw = () => {
                 </div>
               </div>
               <div className="accordionMargin">
-              <Accordion>
-                <div className="accordionElement">
-                  <Accordion.Item eventKey="1">
-                    <div className="accordionHeader">
+                <Accordion>
+                  <div className="accordionElement">
+                    <Accordion.Item eventKey="1">
+                      <div className="accordionHeader">
+                        <Accordion.Header>
+                          <Container>
+                            <Row>
+                              <h5 className="h5">Question 1/4</h5>
+                            </Row>
+                            <Row>
+                              <p class="question">
+                                Did the perpetrator threaten the worker with
+                                deportation?
+                              </p>
+                            </Row>
+                          </Container>
+                        </Accordion.Header>
+                      </div>
+                      <Accordion.Body>
+                        <div className="radioAlign">
+                          <RadioGroup row value={q01} onChange={event => setQuestion01(event.target.value)}>
+                            <div className="yesButton">
+                              <FormControlLabel
+                                value="Yes"
+                                control={<Radio color="primary" />}
+                                label="Yes"
+                              />
+                            </div>
+                            <div className="noButton">
+                              <FormControlLabel
+                                value="No"
+                                control={<Radio color="primary" />}
+                                label="No"
+                              />
+                            </div>
+                            <div className="idkButton">
+                              <FormControlLabel
+                                value="I don't know"
+                                control={<Radio color="primary" />}
+                                label="I don't know"
+                              />
+                            </div>
+                          </RadioGroup>
+                        </div>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="accordionElement">
+                    <Accordion.Item eventKey="2">
                       <Accordion.Header>
                         <Container>
                           <Row>
-                            <h5 className="h5">Question 1/4</h5>
+                            <h5 className="h5">Question 2/4</h5>
                           </Row>
                           <Row>
                             <p class="question">
-                              Did the perpetrator threaten the worker with
-                              deportation?
+                              Did the perpetrator discuss immigration status or
+                              the lack of immigration status?
                             </p>
                           </Row>
                         </Container>
                       </Accordion.Header>
-                    </div>
-                    <Accordion.Body>
-                      <div className="radioAlign">
-                        <RadioGroup row value={value} onChange={handleChange}>
+                      <Accordion.Body>
+                        <RadioGroup row value={q02} onChange={event => setQuestion02(event.target.value)}>
                           <div className="yesButton">
                             <FormControlLabel
                               value="Yes"
@@ -141,138 +188,95 @@ const AssessAbuseOfLaw = () => {
                             />
                           </div>
                         </RadioGroup>
-                      </div>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </div>
-                <div className="accordionElement">
-                  <Accordion.Item eventKey="2">
-                    <Accordion.Header>
-                      <Container>
-                        <Row>
-                          <h5 className="h5">Question 2/4</h5>
-                        </Row>
-                        <Row>
-                          <p class="question">
-                            Did the perpetrator discuss immigration status or
-                            the lack of immigration status?
-                          </p>
-                        </Row>
-                      </Container>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                    <RadioGroup row value={value} onChange={handleChange}>
-                        <div className="yesButton">
-                          <FormControlLabel
-                            value="Yes"
-                            control={<Radio color="primary" />}
-                            label="Yes"
-                          />
-                        </div>
-                        <div className="noButton">
-                          <FormControlLabel
-                            value="No"
-                            control={<Radio color="primary" />}
-                            label="No"
-                          />
-                        </div>
-                        <div className="idkButton">
-                          <FormControlLabel
-                            value="I don't know"
-                            control={<Radio color="primary" />}
-                            label="I don't know"
-                          />
-                        </div>
-                      </RadioGroup>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </div>
-                <div className="accordionElement">
-                  <Accordion.Item eventKey="3">
-                    <Accordion.Header>
-                      <Container>
-                        <Row>
-                          <h5 className="h5">Question 3/4</h5>
-                        </Row>
-                        <Row>
-                          <p class="question">
-                            Did the perpetrator ever threaten the worker with
-                            contacting the 'authorities,' law enforcement, or
-                            the government in order to cause the worker fear?
-                          </p>
-                        </Row>
-                      </Container>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                    <RadioGroup row value={value} onChange={handleChange}>
-                        <div className="yesButton">
-                          <FormControlLabel
-                            value="Yes"
-                            control={<Radio color="primary" />}
-                            label="Yes"
-                          />
-                        </div>
-                        <div className="noButton">
-                          <FormControlLabel
-                            value="No"
-                            control={<Radio color="primary" />}
-                            label="No"
-                          />
-                        </div>
-                        <div className="idkButton">
-                          <FormControlLabel
-                            value="I don't know"
-                            control={<Radio color="primary" />}
-                            label="I don't know"
-                          />
-                        </div>
-                      </RadioGroup>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </div>
-                <div className="accordionElement">
-                  <Accordion.Item eventKey="4">
-                    <Accordion.Header>
-                      <Container>
-                        <Row>
-                          <h5 className="h5">Question 4/4</h5>
-                        </Row>
-                        <Row>
-                          <p class="question">
-                            Did the perpetrator ever abuse or threaten to abuse
-                            the law or legal process in any other way?
-                          </p>
-                        </Row>
-                      </Container>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                    <RadioGroup row value={value} onChange={handleChange}>
-                        <div className="yesButton">
-                          <FormControlLabel
-                            value="Yes"
-                            control={<Radio color="primary" />}
-                            label="Yes"
-                          />
-                        </div>
-                        <div className="noButton">
-                          <FormControlLabel
-                            value="No"
-                            control={<Radio color="primary" />}
-                            label="No"
-                          />
-                        </div>
-                        <div className="idkButton">
-                          <FormControlLabel
-                            value="I don't know"
-                            control={<Radio color="primary" />}
-                            label="I don't know"
-                          />
-                        </div>
-                      </RadioGroup>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </div>
-              </Accordion>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="accordionElement">
+                    <Accordion.Item eventKey="3">
+                      <Accordion.Header>
+                        <Container>
+                          <Row>
+                            <h5 className="h5">Question 3/4</h5>
+                          </Row>
+                          <Row>
+                            <p class="question">
+                              Did the perpetrator ever threaten the worker with
+                              contacting the 'authorities,' law enforcement, or
+                              the government in order to cause the worker fear?
+                            </p>
+                          </Row>
+                        </Container>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <RadioGroup row value={q03} onChange={event => setQuestion03(event.target.value)}>
+                          <div className="yesButton">
+                            <FormControlLabel
+                              value="Yes"
+                              control={<Radio color="primary" />}
+                              label="Yes"
+                            />
+                          </div>
+                          <div className="noButton">
+                            <FormControlLabel
+                              value="No"
+                              control={<Radio color="primary" />}
+                              label="No"
+                            />
+                          </div>
+                          <div className="idkButton">
+                            <FormControlLabel
+                              value="I don't know"
+                              control={<Radio color="primary" />}
+                              label="I don't know"
+                            />
+                          </div>
+                        </RadioGroup>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                  <div className="accordionElement">
+                    <Accordion.Item eventKey="4">
+                      <Accordion.Header>
+                        <Container>
+                          <Row>
+                            <h5 className="h5">Question 4/4</h5>
+                          </Row>
+                          <Row>
+                            <p class="question">
+                              Did the perpetrator ever abuse or threaten to abuse
+                              the law or legal process in any other way?
+                            </p>
+                          </Row>
+                        </Container>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <RadioGroup row value={q04} onChange={event => setQuestion04(event.target.value)}>
+                          <div className="yesButton">
+                            <FormControlLabel
+                              value="Yes"
+                              control={<Radio color="primary" />}
+                              label="Yes"
+                            />
+                          </div>
+                          <div className="noButton">
+                            <FormControlLabel
+                              value="No"
+                              control={<Radio color="primary" />}
+                              label="No"
+                            />
+                          </div>
+                          <div className="idkButton">
+                            <FormControlLabel
+                              value="I don't know"
+                              control={<Radio color="primary" />}
+                              label="I don't know"
+                            />
+                          </div>
+                        </RadioGroup>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </div>
+                </Accordion>
               </div>
             </div>
           </Col>
@@ -280,10 +284,28 @@ const AssessAbuseOfLaw = () => {
       </Container>
 
       <div className="button">
-      <Button>EVALUATE</Button>
-    </div>
+        <Button onClick={handleShow}>EVALUATE</Button>
+      </div>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Result</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {(q01 === 'Yes' || q02 === 'Yes' || q03 === 'Yes' || q04 === 'Yes') ?
+            <h1>Serious Harm</h1>
+            : <h1>Unclear</h1>
+          }
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            RE-EVALUATE
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
 
 export default AssessAbuseOfLaw;
+
