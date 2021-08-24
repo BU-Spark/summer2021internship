@@ -181,7 +181,7 @@ const AssessScreen = () => {
                 </div>
                 <div className="textStyle">
                   <label>
-                  Knowingly destroys government identity document, of another person.
+                  Knowingly destroys the passport or other government identity document of another person
                   </label>
                 </div>
                 <div>
