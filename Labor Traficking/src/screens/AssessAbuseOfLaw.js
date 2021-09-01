@@ -22,9 +22,25 @@ const AssessAbuseOfLaw = () => {
   const [q03, setQuestion03] = React.useState("Yes");
   const [q04, setQuestion04] = React.useState("Yes");
 
-  const [show, setShow] = React.useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [showSH, setShowSH] = React.useState(false);
+  const [showDisc, setShowDisc] = React.useState(false);
+  const [showUnclear, setShowUnclear] = React.useState(false);
+
+  const handleClose = () => {
+    setShowSH(false);
+    setShowDisc(false);
+    setShowUnclear(false);
+  };
+
+  const handleShow = () => {
+    if (q01 === 'Yes' || q02 === 'Yes' || q03 === 'Yes' || q04 === 'Yes') {
+      setShowSH(true);
+    } else {
+      setShowUnclear(true);
+    };
+
+
+  };
 
   const Button = styled.button`
   background-color: #144d7e;
@@ -85,7 +101,7 @@ const AssessAbuseOfLaw = () => {
               </div>
               <div className="definitionHeader">
                 <h2 className="h2">Examples:</h2>
-                <div className="definition" style={{lineHeight: '40px'}}>
+                <div className="definition" style={{ lineHeight: '40px' }}>
                   <ul>
                     <li>An employer threatens to deport the worker or "call immigration" if he stops working for the employer.</li>
                     <li>An employer threatens to falsely accuse the worker of a crime if she fails to work.</li>
@@ -296,15 +312,32 @@ const AssessAbuseOfLaw = () => {
         <Button onClick={handleShow}>EVALUATE</Button>
       </div>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={showSH} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Result</Modal.Title>
+          <Modal.Title></Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {(q01 === 'Yes' || q02 === 'Yes' || q03 === 'Yes' || q04 === 'Yes') ?
-            <h1>Serious Harm</h1>
-            : <h1>Unclear</h1>
-          }
+          <i class='fas fa-exclamation-triangle'></i>
+          <h1>Serious Harm</h1>
+
+          There appear to be likely indicators of labor trafficking. Continue evaluation or consider referring to law enforcement at this time.
+
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            RE-EVALUATE
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={showUnclear} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <i class="fa fa-question-circle"></i>
+          <h1>Unclear</h1>
+          It is unclear if this is a case of labor trafficking. Continue evaluation in this or other categories or consider referring to law enforcement at this time.
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
@@ -317,4 +350,3 @@ const AssessAbuseOfLaw = () => {
 };
 
 export default AssessAbuseOfLaw;
-
