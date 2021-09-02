@@ -17,10 +17,10 @@ import Modal from 'react-bootstrap/Modal';
 />;
 
 const AssessAbuseOfLaw = () => {
-  const [q01, setQuestion01] = React.useState("Yes");
-  const [q02, setQuestion02] = React.useState("Yes");
-  const [q03, setQuestion03] = React.useState("Yes");
-  const [q04, setQuestion04] = React.useState("Yes");
+  const [q01, setQuestion01] = React.useState('');
+  const [q02, setQuestion02] = React.useState('');
+  const [q03, setQuestion03] = React.useState('');
+  const [q04, setQuestion04] = React.useState('');
 
   const [showSH, setShowSH] = React.useState(false);
   const [showDisc, setShowDisc] = React.useState(false);
@@ -35,11 +35,12 @@ const AssessAbuseOfLaw = () => {
   const handleShow = () => {
     if (q01 === 'Yes' || q02 === 'Yes' || q03 === 'Yes' || q04 === 'Yes') {
       setShowSH(true);
-    } else {
+    } else if (q01 === '' || q02 === '' || q03 === '' || q04 === '') {
+      setShowDisc(true);
+    }
+    else {
       setShowUnclear(true);
     };
-
-
   };
 
   const Button = styled.button`
@@ -317,7 +318,7 @@ const AssessAbuseOfLaw = () => {
           <Modal.Title></Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <i class='fas fa-exclamation-triangle'></i>
+          <i class='fas fa-exclamation-triangle fa-2x'></i>
           <h1>Serious Harm</h1>
 
           There appear to be likely indicators of labor trafficking. Continue evaluation or consider referring to law enforcement at this time.
@@ -335,13 +336,31 @@ const AssessAbuseOfLaw = () => {
           <Modal.Title></Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <i class="fa fa-question-circle"></i>
+          <i class="fa fa-question-circle fa-2x"></i>
           <h1>Unclear</h1>
           It is unclear if this is a case of labor trafficking. Continue evaluation in this or other categories or consider referring to law enforcement at this time.
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
             RE-EVALUATE
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={showDisc} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h1>Disclaimer</h1>
+          Your answers will not be saved if you leave this page. We recommend that you finish the evaluation to determine the result before exiting.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            CONTINUE EVALUATION
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            LEAVE PAGE
           </Button>
         </Modal.Footer>
       </Modal>
