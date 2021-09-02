@@ -172,7 +172,6 @@ h6 {
   left: 3%;
   width: 30%;
   height: auto;
-
 }
 
 .container {
@@ -265,4 +264,19 @@ b {
   left: 0;
   margin: 12px;
   border-radius: 4px;
+}
+
+.fa-exclamation-triangle {
+  color: #c40000;
+}
+
+.modal-body {
+  text-align: center;
+  color: #19578d;
+}
+
+.modal-footer {
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
 }
