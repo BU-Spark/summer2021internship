@@ -1,0 +1,5 @@
+google-cloud-vision==2.0.0
+Google-cloud-storage==1.38.0
+regex @ file:///opt/concourse/worker/volumes/live/6dbf579b-ae2b-4710-566e-2bd99f64dea6/volume/regex_1625610100180/work
+python-dotenv==0.17.1
+mysql-connector==2.2.9

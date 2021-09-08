@@ -1,0 +1,7 @@
+.env
+.vscode/
+cogent-tree-316923-ee7580600525.json
+newCases.csv
+newCasesWithMentions.csv
+TESTnewCasesWithMentions.csv
+scores_added.csv
