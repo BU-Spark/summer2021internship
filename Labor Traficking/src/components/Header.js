@@ -17,15 +17,15 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <NavDropdown title="Tools" id="basic-nav-dropdown">
-                                <LinkContainer to='/Assess'>
+                                <LinkContainer to='/assess'>
                                     <NavDropdown.Item>Assess</NavDropdown.Item>
                                 </LinkContainer>
                                 <NavDropdown.Divider />
-                                <LinkContainer to='/Prepare'>
+                                <LinkContainer to='/prepare'>
                                     <NavDropdown.Item>Prepare</NavDropdown.Item>
                                 </LinkContainer>
                                 <NavDropdown.Divider />
-                                <LinkContainer to='/Resources'>
+                                <LinkContainer to='/resources'>
                                     <NavDropdown.Item>Resources</NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>

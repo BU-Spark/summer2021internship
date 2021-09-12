@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -16,14 +17,22 @@ const Footer = () => {
                     <Col className='text-center py-3'>
                         <dl>
                             <dd>Tools</dd>
-                            <dd>Assess</dd>
-                            <dd>Prepare</dd>
-                            <dd>Resources</dd>
+                            <dd>
+                                <Link to="/assess">Assess</Link>
+                            </dd>
+                            <dd>
+                                <Link to="/prepare">Prepare</Link>
+                            </dd>
+                            <dd>
+                                <Link to="/resources">Resources</Link>
+                            </dd>
                         </dl>
                     </Col>
                     <Col className='text-center py-3'>
                         <dl>
-                            <dd>About</dd>
+                            <dd>
+                                <Link to="/aboutUs">About Us</Link>
+                            </dd>
                             <dd>Our goal</dd>
                             <dd>Who We Are</dd>
                             <dd><a href="https://analytics.google.com/" target="_blank" rel="noopener noreferrer">Google Analytics</a></dd>
@@ -31,7 +40,9 @@ const Footer = () => {
                     </Col>
                     <Col className='text-center py-3'>
                         <dl>
-                            <dd>Massachusettes Law</dd>
+                            <dd>
+                                <Link to="/massLaw">Massachusettes Law</Link>
+                            </dd>
                             <dd>Criminal Penalties</dd>
                             <dd>Federal Crime Statues</dd>
                         </dl>
