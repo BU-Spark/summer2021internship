@@ -1,5 +1,6 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion'
+import "../styles/PrepareScreen.css";
 
 const PrepareScreen = () => {
 
@@ -16,9 +17,9 @@ const PrepareScreen = () => {
                     <span style={{ color: "#20548c", textDecoration: "underline", fontStyle: "italic" }}>click here to download</span>
                 </p>
             </div>
-            <div style={{ marginLeft:"auto", marginRight: "auto", marginBottom: 0, borderStyle: 'solid', borderColor: "rgba(20,77,126,0.51)", width: '61.875rem', paddingRight: '40px'}}>
+            <div className="cardOuterBody">
                 <Accordion>
-                    <div style={{borderStyle: 'solid', borderColor: "rgba(20,77,126,0.51)", width:'58rem', marginRight:'31px', marginLeft:'31px', paddingRight:'40px', marginTop:'20px'}}>
+                    <div className="cardBody">
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>Tip #1: Develop Trust</Accordion.Header>
                             <Accordion.Body>
@@ -73,7 +74,7 @@ const PrepareScreen = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                     </div>
-                    <div style={{borderStyle: 'solid', borderColor: "rgba(20,77,126,0.51)", width:'58rem', marginRight:'31px', marginLeft:'31px', paddingRight:'40px', marginTop:'20px'}}>
+                    <div className="cardBody">
                         <Accordion.Item eventKey="1">
                             <Accordion.Header>Tip #2: Understand the impact of immigration status on victim cooperation</Accordion.Header>
                             <Accordion.Body>
@@ -86,7 +87,7 @@ const PrepareScreen = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                     </div>
-                    <div style={{borderStyle: 'solid', borderColor: "rgba(20,77,126,0.51)", width:'58rem', marginRight:'31px', marginLeft:'31px', paddingRight:'40px', marginTop:'20px'}}>
+                    <div className="cardBody">
                         <Accordion.Item eventKey="2">
                             <Accordion.Header>Tip #3: Engage in safety planning</Accordion.Header>
                             <Accordion.Body>
@@ -115,7 +116,7 @@ const PrepareScreen = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                     </div>
-                    <div style={{borderStyle: 'solid', borderColor: "rgba(20,77,126,0.51)", width:'58rem', marginRight:'31px', marginLeft:'31px', paddingRight:'40px', marginTop:'20px'}}>
+                    <div className="cardBody">
                         <Accordion.Item eventKey="3">
                             <Accordion.Header>Tip #4: Use a qualified interpreter</Accordion.Header>
                             <Accordion.Body>
@@ -142,7 +143,7 @@ const PrepareScreen = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                     </div>
-                    <div style={{borderStyle: 'solid', borderColor: "rgba(20,77,126,0.51)", width:'58rem', marginRight:'31px', marginLeft:'31px', paddingRight:'40px', marginTop:'20px'}}>
+                    <div className="cardBody">
                         <Accordion.Item eventKey="4">
                             <Accordion.Header>Tip #5: Make referrals to appropriate victim services as soon as possible</Accordion.Header>
                             <Accordion.Body>
@@ -164,7 +165,7 @@ const PrepareScreen = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                     </div>
-                    <div style={{borderStyle: 'solid', borderColor: "rgba(20,77,126,0.51)", width:'58rem', marginRight:'31px', marginLeft:'31px', paddingRight:'40px', marginTop:'20px', marginBottom:'20px'}}>
+                    <div className="cardBodyBottom">
                         <Accordion.Item eventKey="5">
                             <Accordion.Header>Tip #6: Educate yourself about trauma</Accordion.Header>
                             <Accordion.Body>

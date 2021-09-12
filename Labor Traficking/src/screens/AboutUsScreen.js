@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles/AboutUsScreen.css";
 
 const AboutUsScreen = () => {
     return (
@@ -31,29 +32,31 @@ const AboutUsScreen = () => {
                         A coalition of individuals focused on shining a light to bring labor trafficking out of the shadows.
                     </div>
 
-                    <figure>
-                        <img src='/icons/icon_HTD.svg' alt='HTD' />
-                        <figcaption>Human Trafficking Division, <br />
-                            MA Office of the Attorney General</figcaption>
-                    </figure>
+                    <div>
+                        <figure>
+                            <img src='/icons/icon_HTD.svg' alt='HTD' />
+                            <figcaption>Human Trafficking Division, <br />
+                                MA Office of the Attorney General</figcaption>
+                        </figure>
 
-                    <figure>
-                        <img src='/icons/icon_FLD.svg' alt='FLD' />
-                        <figcaption>Fair Labor Division, <br />
-                            MA Office of the Attorney General</figcaption>
-                    </figure>
+                        <figure>
+                            <img src='/icons/icon_FLD.svg' alt='HTD' />
+                            <figcaption>Fair Labor Division, <br />
+                                MA Office of the Attorney General</figcaption>
+                        </figure>
 
-                    <figure>
-                        <img src='/icons/icon_Spark.svg' alt='HTD' />
-                        <figcaption>BU Spark!</figcaption> <br />
+                        <figure>
+                            <img src='/icons/icon_Spark.svg' alt='HTD' />
+                            <figcaption>BU Spark!</figcaption> <br />
 
-                    </figure>
+                        </figure>
 
-                    <figure>
-                        <img src='/icons/icon_IRH.svg' alt='HTD' />
-                        <figcaption>Immigrants’ Rights and Human Trafficking Program, <br />
-                            BU School of Law</figcaption>
-                    </figure>
+                        <figure>
+                            <img src='/icons/icon_IRH.svg' alt='HTD' />
+                            <figcaption>Immigrants’ Rights and Human Trafficking Program, <br />
+                                BU School of Law</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
